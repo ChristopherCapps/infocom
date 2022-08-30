@@ -1,0 +1,1413 @@
+@Style[LeftMargin 10 chars, RightMargin 10 chars, Spacing 1 line, Justification no, TabWidth 8 chars]
+@Pageheading[center "@b(* Infocom, Inc., Company Confidential Document *)"]
+@Blankspace[10 lines]
+@verbatim<
+		    X   X  ZZZZZ  IIIII  PPPP
+		    X   X      Z    I    P   P
+		     X X      Z     I    P   P
+		      X      Z      I    PPPP
+		     X X    Z       I    P
+		    X   X  Z        I    P
+		    X   X  ZZZZZ  IIIII  P
+>
+@Blankspace[4 lines]
+@Center<
+XZIP: ZIP New Technology
+
+Dave Lebling
+
+October 22, 1986
+
+@Blankspace[8 lines]
+INFOCOM INTERNAL DOCUMENT - NOT FOR DISTRIBUTION>
+
+@newpage
+@heading(@u[Introduction])
+
+This document is the specification for enhancements to the EZIP
+virtual machine to support color, static graphics, block
+operations, more powerful input, etc.
+
+Other enhancements are described for informational purposes but
+are not necessarily to be implemented as part of version 5 of
+ZIP. These include mouse input, inter-machine communication,
+extended arithmetic, and others.
+
+The ideas contained herein are primarily those of Brian Moriarty
+and myself, but include suggestions made by many others,
+including Duncan Blanchard, Linde Dynneson, Tim Anderson, Chris
+Reeve, Stu Galley, and Jon Palace.
+
+@heading(@u[General Opcode Additions])
+
+New opcodes and capabilities are defined in the areas of (a)
+generating new game vocabulary on the fly, (b) saving space
+for calls that don't return a useful value, and (c) saving
+and restoring parts of the impure area instead of the entire
+impure area (useful for such applications as a role-playing
+game).
+
+Far more enhancements are suggested than can fit in our existing
+opcode range. However, we can extend the opcode range at any
+time:
+
+@verbatim<
+EXTOP opcode:int				0OP:190>
+
+Tells the interpreter that the following @u(opcode) is an extended
+opcode, meaning that the next byte is an opcode from a new set of
+256 operations different from the first "normal" set.
+
+The extension opcode set is decoded under the assumption that all
+the opcodes in it are XOPs.
+
+In this document, such extension opcodes are denoted by opcode
+numbers greater than 255.  In effect, the EXTOP instruction
+(which is never seen by the game author) says to add 256 to the
+opcode following it. In ZIP20, all this necessitates is extending
+the size of the opcode table.  EXTOP is handled during
+instruction decoding, rather than executing it as a real opcode
+would be executed.
+
+@subheading(Overhaul the READ Instruction)
+
+The READ instruction as currently defined performs both the
+input and the tokenizing/lookup phases of input.  It should
+be possible to split off the latter into a separate
+instruction, which will allow multiple vocabulary lists.
+
+First, we make a change in the definition of a vocabulary list.
+If the length-of-vocabulary-list word at the start of a
+vocabulary list is negative, then the list is not in sorted
+order, but is otherwise identical to a normal vocabulary list.
+Obviously, such lists should be short, or lookup time becomes
+prohibitive.
+
+@verbatim<
+READ	inbuf:tbl[,lexv:tbl][,time:int][,handler:fcn] EXT:228/VAL>
+
+READ now returns a value. The value is the character which
+terminated the input. This will be one of the characters in the
+newly defined TCHARS word. TCHARS points to a TABLE of bytes
+which are characters which should terminate input. The TCHARS
+table terminates with a zero byte. A carriage-return is always
+a terminating character, whether it appears in the table or not.
+If the character 255. appears in the TCHARS table, it means that
+all function keys (keys with values greater than 127.) are terminators.
+
+Further, the @u(inbuf) argument of READ is changed. Its first two
+bytes are now the length of the input buffer (in bytes) and the
+number of bytes read into the buffer so far. The second byte also
+determines where in the buffer to start putting new characters
+when READ is called. If a completely new buffer is to be read
+(the normal case, and the only case in the current ZIP) then the
+second byte of @u(inbuf) should be zeroed before READ is called.
+
+The @u(lexv) argument is now optional.  If @u(lexv) is defaulted
+or zero, the input accumulated by READ is not tokenized.
+
+With these additions, it is possible for READ to be executed,
+return a terminal character, the program perform some action
+based on that character, and then execute READ again, and so on
+until a full line of input is specified.
+
+@verbatim<
+LEX	inbuf:tbl,lexv:tbl[,lexicon:tbl][,preserve:bool] EXT:251>
+
+Tokenizes and looks up an input buffer's contents.  The
+first two arguments are exactly as for READ.  The third
+argument, if not supplied, is the normal vocabulary list.
+If supplied, it is an additional vocabulary list. (Methods
+will be added to ZIL/ZILCH to create multiple vocabulary lists.)
+
+Note that LEX is exactly like the second phase of READ. This
+means that if an additional vocabulary list is used on an input
+buffer that contains only words from the normal vocabulary list,
+it will not find them and zero their slots in the @u(lexv).
+
+For this reason an additional argument, @u(preserve) is defined
+for LEX. If supplied and non-zero, it means that the @u(lexv)
+slots for words not found are not touched. Using this argument,
+several successive vocabulary lists can be applied to the same
+input buffer.
+
+@verbatim<
+ZWSTR	inbuf:tbl,inlen:int,inbeg:int,zword:tbl	EXT:252>
+
+Takes an input buffer pointer, the length of the word being
+converted, the character offset in the
+buffer of the start of the word, and a pointer to a table with at
+least six bytes that can be clobbered. It would also be possible
+to pass a RESTed @u(inbuf) and no @u(inbeg), but this form of
+ZWSTR duplicates the format of a lexical buffer and is therefore
+preferable. ZWSTR expects the word to be terminated by one of
+the usual break characters, so no length argument is needed. A
+zero byte is an acceptable break character.
+
+The ZWSTR instruction converts the "word" contained in the
+buffer into a ZWORD and places the conversion in the first
+three words of the table.
+
+@subheading(Additional Keyboard Input)
+
+Current EZIP supports the four arrow keys as input keys.
+These four keys are defined to produce codes that are
+intermixed with the regular keyboard inputs.  Most EZIP
+machines have far more function keys than the four arrow
+keys, and it would be nice to support them, but there is no
+"room" in the standard character set of 128 characters.
+
+Therefore, function keys must produce values greater than 127,
+that is, they have the high bit of a byte turned on. Initially,
+we define twelve function keys and four arrow keys.
+
+These should be accepted by both the INPUT and READ instructions.
+In current EZIP, only INPUT understands function keys.
+
+@verbatim<
+	up-arrow	returns	129
+	down-arrow	returns 130
+	left-arrow	returns 131
+	right-arrow	returns 132
+	keys F1-F12	return	133-144
+	etc.
+>
+
+On the VT110 family of machines I have defined the keypad keys to
+return values from 133. to 150., so that we can experiment with
+function keys.
+
+Note that if we wish we can define any number of additional
+function keys, tailored to each machine.
+
+There should be a shorthand way of defining all function keys as
+self-inserting breaks (which they would want to be in many games).
+This may even want to be the normal case.
+
+@subheading(No-value CALLs)
+
+@verbatim<
+ICALL1	routine:fcn				1OP:143>
+
+@verbatim<
+ICALL2	routine:fcn,arg1:any			2OP:26>
+
+@verbatim<
+ICALL	routine:fcn,arg1:any,arg2:any,arg3:any	EXT:249>
+
+@verbatim<
+IXCALL	routine:fcn,arg1,...			EXT:250>
+
+ICALL, ICALL1, ICALL2, and IXCALL are defined exactly as
+their counterparts CALL, etc., except that they do not
+return anything.  The return byte is therefore saved.  User
+code would never explicitly invoke these, but the compiler
+would use them when it notices that the value of a routine
+is unused. This would also have the advantage of reducing
+stack usage and limiting stack overflows.
+
+Note that the interpreter must remember that a returnless call
+was executed, and this information must be saved as part of the
+routine's state information if the routine calls another routine.
+
+@subheading(Non-local Return)
+
+@verbatim<
+CATCH						EXT:185/VAL>
+@verbatim<
+THROW	any,frame				2OP:28>
+
+CATCH returns a pointer (called a @u(frame)) to the call to the
+current routine. THROW returns @u(any) from a @u(frame). It is as
+though the routine in which the CATCH was done returned @u(any).
+The @u(frame) should be one that is still "alive," meaning that
+when the THROW is executed, it is in a routine called (directly
+or indirectly) by the routine that did the CATCH.
+
+*Note: This opcode recycles the former opcode for FSTACK.
+
+@subheading(New Format for Function Headers)
+
+It has been suggested that the function header is needlessly
+expensive. Most locals are initialized to zero anyway.
+To compact the header we:
+
+@begin(itemize)
+Require that all locals be initialized to zero. Then the header
+is only the count of locals. Any local that's initialized is then
+initialized explicitly (by a compiled SET).
+
+A routine should be able to find out if an optional was supplied.
+Then it could test for this and initialize the optional if it was
+not supplied, or jump around the initialization otherwise. This
+only needs to be done if an optional was defaulted to a non-zero.
+One nice side-effect is that it is now possible to default an
+optional to anything, not just a constant.
+@end(itemize)
+
+The instruction for finding out if an optional is supplied is
+
+@verbatim<
+ASSIGNED? opt:var				EXT:255/PRED>
+
+ASSIGNED? is true if an optional argument was supplied. It is
+similar to MDL ASSIGNED?, but not as general.
+
+ASSIGNED? must work even if there has been a call out of a
+function. The number of arguments (not locals!) passed to a
+function must be stored as part of the frame, and restored when
+the called function returns to the caller.
+
+@subheading(Miscellaneous)
+
+@verbatim<
+SHIFT	int,n					EXT:258/VAL>
+
+SHIFT performs a 16-bit logical shift on @u(int), shifting it
+left @u(n) bits if @u(n) is positive, and right the absolute
+value of @u(n) bits if @u(n) is negative. In a logical shift, the
+sign bit is not propagated on rightward shifts, but rather
+zeroed.
+
+@verbatim<
+ASHIFT	int,n					EXT:259/VAL>
+
+ASHIFT performs a 16-bit arithmetic shift on @u(int), shifting it
+left @u(n) bits if @u(n) is positive, and right the absolute
+value of @u(n) bits if @u(n) is negative. In an arithmetic shift,
+the sign bit is propagated on rightward shifts, meaning that a
+negative number stays negative.
+
+@verbatim<
+BCOM	int					EXT:248/VAL>
+
+To make room for the ICALL1 opcode, BCOM, which is rarely used
+anyway, has been redefined as an XOP.  It is otherwise unchanged.
+
+@verbatim<
+FSTACK						0OP:185>
+
+With the addition of the no-value CALL instructions, the need for
+the FSTACK opcode is eliminated.  It can therefore be removed and
+its opcode recycled (as the CATCH instruction).
+
+@subheading(Partial SAVE and RESTORE)
+
+Add arguments to SAVE and RESTORE to allow saving parts of
+the impure area, rather than just all. Note that the opcodes for
+SAVE and RESTORE are changed to allow these additional arguments.
+The old opcodes (181. and 182.) have not been recycled.
+
+@verbatim<
+SAVE	[start:int,length:int,name:tbl]		EXT:256/VAL>
+
+@verbatim<
+RESTORE	[start:int,length:int,name:tbl]		EXT:257/VAL>
+
+The normal use of SAVE and RESTORE (no arguments supplied) is
+unchanged, but if these arguments are supplied, SAVE and RESTORE
+become atomic i/o operations.
+
+These write or read a section of the impure area. The @u(length)
+argument is the length of the save area in bytes.
+
+The @u(name) argument is an LTABLE of bytes. It is the game's
+unique name for the file being created. RESTORE should check that
+the @u(name) is the same in the file being restored as the
+RESTORE's @u(name) argument. If it is not, it is an error.
+
+It is expected that the user will be called upon to supply a file
+name or number or whatever. This may well be the same as the
+@u(name) argument on machines with file systems, but need not be.
+It is recommended that the @u(name) argument be displayed or used
+as a default when the user is consulted, however.
+
+SAVE and RESTORE return values as before.
+
+In high-level terms, the game saves or restores a TABLE or a
+group of contiguous tables. Some additions may be needed to
+ZIL/ZILCH to force a set of tables to be compiled contiguously.
+
+@subheading(Piracy Protection)
+
+While we currently do not protect our disks, we may again want to
+in the future. This instruction would permit that.
+
+@verbatim<
+ORIGINAL?					EXT:191/PRED>
+
+Returns non-false if the game disk is the original.
+
+*Note: Is this worthwhile? Enough people have decoded our file
+format to figure out where in the interpreter to patch this so it
+always returns true. Would this instruction actually be a good
+piracy detector even if it existed?
+
+@heading(@u[Block Operations])
+
+Some common operations performed with loops are very
+time-consuming.  So we define some new instructions and change an
+old one to deal with these common cases.
+
+@subheading(Table Searching)
+
+@verbatim<
+INTBL?	item,tbl,len:int[,recspec:int]		EXT:247/VAL/PRED>
+
+INTBL? is given an optional fourth argument, the @u(recspec), or
+record specification. This is a byte whose high bit determines
+whether INTBL? is comparing words (high bit 1) or bytes (high bit
+0), and whose low seven bits are the record length. If not
+supplied or zero, defaults to 130. (202 octal) which is
+equivalent to the current usage of INTBL?. Note that the @u(len)
+argument is now interpreted as the number of records to search,
+rather than the number of words. As an example, to search an
+input buffer for a specific character, one would invoke
+
+@verbatim[
+	GETB	INBUF,1 >LEN
+	ADD	INBUF,2 >TMP
+	INTBL?	CHR,TMP,LEN,1 >VAL /PRED
+]
+
+This expansion of INTBL? makes it possible to search tables of
+alternating keys and values, a case which is relatively common.
+For example, to search a lexical buffer for a specific word, we
+use a record length of four:
+
+@verbatim[
+	GETB	LEXV,1 >LEN
+	ADD	LEXV,2 >TMP
+	INTBL?	WRD,TMP,LEN,132 >VAL /PRED
+]
+
+@subheading(Table Copying)
+
+For fast copying or clearing of a table, the COPYT instruction is
+added.  It is similar to, but simpler than, MDL SUBSTRUC.
+
+@verbatim<
+COPYT	source:tbl,dest:tbl,length:int		EXT:253>
+
+Copies elements of @u(source) into @u(dest) until @u(length)
+bytes have been copied.
+
+If @u(dest) is zero, means to zero @u(length) bytes of @u(source).
+
+If @u(length) is positive, copies @u(length) bytes from @u(source)
+to @u(dest). In this case, the interpreter checks for overlap of
+@u(source) and @u(dest). They overlap if @u(source) is less than
+@u(dest) and @u(source)+@u(length) is greater than or equal to @u(dest). If
+overlap occurs, COPYT performs a "backwards" copy. This means
+that it copies from
+
+@verbatim<
+	@u(source)+@u(length)-1 to @u(dest)+@u(length)-1
+	@u(source)+@u(length)-2 to @u(dest)+@u(length)-2
+	etc.
+>
+
+until it has copied @u(length) bytes. Thus, a table can be copied
+to itself, leaving room for new elements at the beginning,
+non-destructively.
+
+If @u(length) is negative, COPYT does not check for overlap, and
+always copies forwards. This allows some clever tricks. For
+example, if a number of bytes are placed in @u(source), and
+@u(source) is copied to itself offset by that number of bytes,
+then the bytes will be duplicated as in @u(source) until the
+length runs out. This can be used to zero a table or copy the
+same elements into many slots of one.
+
+@subheading(Table Printing)
+
+For fast display of "complicated" text, such as the pop-up
+windows in Trinity, or the status line in any EZIP game, the
+writer must usually fill a table with characters by using
+appropriate DIROUT and printing instructions, and then loop
+through the table character by character, displaying it. A block
+oriented print would speed this process up considerably.
+
+Some machines can "zoom" a window, or more accurately, its frame.
+It might be reasonable to use this feature on machines which have
+it. Then again, it might be better to ignore that and just be
+able to print arbitrary text @u(fast) and not assume the text is
+in a window.
+
+@verbatim<
+PRINTT	bytes:tbl,width:int[,height:int]	EXT:254>
+
+PRINTT takes a table of bytes, a width (a number of columns) and
+optionally a height (a number of lines), which is assumed to be
+one if omitted.  It prints, in a block at the current cursor
+position, the bytes in the table. Each group of @u(width) bytes
+is printed on a separate line aligned with the first, until
+@u(height) lines have been printed.
+
+@heading(@u[Display Changes and Additions])
+
+A color selection opcode is added, and some amendments are made
+to the ways in which buffering is done.
+
+@subheading(Buffering)
+
+Currently, it is necessary to turn off buffering (with the BUFOUT
+opcode) before performing a CURSET operation. There are other
+interactions between buffering and screen selection which are
+unspecified but which have proved to be messy.
+
+In the future the CURSET, SCREEN, ERASE, CLEAR and COLOR
+opcodes must output any buffered text to the screen before
+performing any other action. Any future opcodes defined which may
+change screen appearance will also be defined to output buffered
+text as their first action.
+
+Depending on how SPLIT, CURGET, DIROUT, FONT and HLIGHT are
+implemented in a particular interpreter, they may also want to
+output buffered text. In some implementations, they will not need
+to, as for example HLIGHT in ZIP20 is implemented by placing
+highlighting characters in the output stream.  In an interpreter
+where HLIGHT is done by a system call ("future output is
+underlined," e.g.) it should output the buffer first.
+
+@subheading(Clarifying Some Things)
+
+In addition to the buffering changes, it is necessary to clarify
+the interaction between various opcodes and the cursor position.
+
+For example, under normal circumstances, the SPLIT opcode should
+cause no visible changes on the screen.  However, when the cursor
+position in screen 0 is within the area which will become screen
+1, the cursor should be moved to the top and left of the new
+screen 0.
+
+When either screen is departed, the position in that screen
+should be remembered, and when the screen is reentered, it should
+be restored.
+
+When screen 1 is first selected after a SPLIT instruction, the
+cursor moves to the top and left of screen 1.
+
+When a screen is cleared, the cursor moves to the top and left of
+that screen.
+
+@subheading(EZIP Screen Parameters)
+
+EZIP games must be written to accomodate any screen width
+between (approximately) 64 and 80 characters.  This means
+that centered text must be centered based on the screen
+width gotten from the HWRD word (see below).  Similarly,
+variable-width fonts may be used, so the CURGET opcode must
+be used if the game wishes to leave the upper window and
+then return to the same point in it later.  Thus the CURGET
+opcode, currently optional, must be implemented in all EZIP
+implementations.
+
+@verbatim<
+CURSET	y:int,x:int				EXT:239>
+
+CURSET acts as before, except that its arguments are in pixels
+rather than lines and characters. If the machine does not support
+variable width fonts, then the @u(y) and @u(x) are identical to
+what they formerly were.  The upper left corner of the screen is
+the origin, and is referred to as 1,1.
+
+CURSET must output any buffered output before actually moving the
+cursor. The requirement that buffering be turned off before
+CURSET is executed is removed.
+
+@verbatim<
+CURGET	output:tbl				EXT:240>
+
+Returns information about the current cursor position. It is
+passed an @u(output) table which must have the first two words
+free to write in. CURGET should write the y position in the
+word 0 of the table, and the x position in word 1 of the table.
+
+Pictures require other changes which will be discussed
+below.
+
+@subheading(Fonts)
+
+@verbatim<
+FONT	font:int				EXT:260/VAL>
+
+Selects a particular font for the currently selected window, and
+returns the number of the previously selected font.  If the new
+font cannot be selected for some reason, returns 0. The font
+should be remembered for that window until it is explicitly
+changed.  Font 1 is the "normal" font for the machine in
+question, and it is selected initially for both screen windows.
+The interpreter is responsible for updating the FWRD parameter
+word whenever the font changes.
+
+It should be possible to change fonts many times, even during a
+line or word of output.
+
+In ZIP20, in addition to the normal font (1), and the picture
+font (2), font 3 is the VT100 character graphics set.
+
+@subheading(Color Selection)
+
+@verbatim<
+COLOR	fore:int,back:int			2OP:27>
+
+If option bit 0 (the COLOR bit) in the mode byte is zero,
+this operation is ignored. Otherwise, the foreground color
+of all subsequently displayed text is set to @u(fore), and the
+background color is set to @u(back).
+
+The screen data word CLRWRD contains the system default colors.
+The background color in the first byte and the foreground color
+in the second byte.
+
+The values of @u(fore) and @u(back) are interpreted as follows (the
+colors are those for the IBM-PC):
+
+@verbatim<
+	0 = no change
+	1 = system default color
+	2 = black
+	3 = red
+	4 = green
+	5 = yellow
+	6 = blue
+	7 = magenta
+	8 = cyan
+	9 = white
+>
+
+Note that the colors available may vary from machine to machine.
+We have to decide on either a set of colors common to all
+machines, or admit that the set will vary in each interpreter.
+Also, not all machines can handle this many colors.
+
+For example, on the Atari ST, you get the choice of:
+
+@verbatim<
+    - high res, 2 colors (mono), 640 (80 cols) x 400
+    - medium res, 4 colors, 640 (80 cols) x 200
+    - low res, 16 colors, 320 (40 cols) x 200
+>
+
+The consensus seems to be to use the medium res mode, but what
+four colors should be supported?
+
+It has also been suggested that we have some gray-scale numbers.
+
+The CLEAR opcode is defined to clear the window(s) to the
+background color specified by the last COLOR opcode, and the
+ERASE opcode similarly to erase to the background color.
+
+Games should allow for primitive machines (Apple IIs, Macs and
+the 20) that don't have color. Machines with monochrome display
+options should ask the user whether he or she wants color.
+
+@heading(@u[Static Graphics])
+
+The current EZIP specification requires host machines to
+emulate the 80-column alphanumeric display of a VT100. It
+does not exploit or even acknowledge the bitmap displays
+employed by most EZIP micros. The following additions allow
+game designers to take advantage of some of this lost
+potential.
+
+@subheading(Pictures)
+
+Pictures are not necessarily included in the virtual address
+space of the game, and may be stored in machine-dependent
+ways. It is the job of the interpreter to map between
+picture references in the game and picture storage of
+whatever sort.
+
+@verbatim<
+DISPLAY	picture:int,x:int,y:int			EXT:261>
+
+A picture is a number that indexes into the "picture library."
+
+DISPLAY displays a picture at the location (x,y) (specified in
+pixels).  The location given is where the upper left corner of
+the picture should appear.  The upper left corner of the screen
+is the location 1,1.
+
+If the x or y argument is not supplied or 0, then the current x
+or y position in the current window is used.
+
+If (and only if) both x and y are omitted, DISPLAY updates the
+cursor position in the window in which the picture is displayed.
+Consequently, passing a single argument is very similar to
+displaying the picture as though it was a character.
+
+If display is used in this mode, the picture displayed should be
+treated like a character (the one with the same ascii value as
+the picture's picture number) in the history buffer (if any).
+This implies that pictures displayed with explicit location
+arguments are not saved in the history buffer.
+
+It is expected that in normal use, pictures that are "like
+characters" will be displayed primarily in window 0, and pictures
+that are "like pictures" will be displayed primarily in window 1.
+
+@verbatim<
+PICINF	picture:int,data:tbl			EXT:262/PRED>
+
+PICINF is used to get data about a picture. The interpreter fills
+in the table @u(data) with the width and height of the picture
+specified, in pixels. It is up to the interpreter to determine
+from the picture image itself the width and height of the
+picture.
+
+Since zero is not a legal picture id, if the @u(picture) argument to
+PICINF is zero, then the highest picture id in the picture
+library will be returned in word 0 of the @u(data) table.  This
+will be equivalent to the number of pictures in the library if
+all ids are used, but there is no requirement that this be the case.
+
+If the picture number given is not a legitimate picture number, PICINF
+returns false. Note that DISPLAY and DCLEAR give errors in this
+situation!
+
+There is no specification of how pictures are stored, where they
+are stored, or how the interpreter accesses them or displays
+them. This is to give each machine maximum flexibility in this
+area.
+
+@verbatim<
+DCLEAR	picture:int,x:int,y:int			EXT:263>
+
+Clears the area taken up by the picture. I.e., restores the
+screen background color.
+
+There should probably be some pictures defined that would be
+used only for DCLEAR, such as a picture of the whole screen.
+
+*Note: If possible, we should define DISPLAY to save the
+previous contents of the area overwritten by the new
+picture.  If so, then a DCLEAR should restore the
+overwritten area.  There may have to be a limit on how large
+a picture could be saved this way, and how long to remember
+it.  (It may be impossible to do this on some machines.)
+
+@subheading(Interaction of Pictures and Fonts)
+
+The "picture library" is a selection of images which are
+referenceable using small integers as an index.  In this
+way, a picture library is very much like a font.  In a font,
+the images are characters, and in a picture library they are
+pictures.  Consequently, font 2 is defined to be the picture
+library.  If FONT 2 is executed, subsequent character output
+to the screen is displayed from the picture library.  If
+there is no picture library, then FONT 2 is a no-op.
+
+*Note: Do pictures need a way of saying that the horizontal and
+vertical position shouldn't change when they are displayed?
+
+@subheading(Changing Margins)
+
+@verbatim<
+MARGIN	left:int,right:int			EXT:264>
+
+Sets left margin and right margin in pixels. @u(Left) and
+@u(right) are the width of the margins, not the locations of the
+margins, so both are initially 0. The margins are stored in the
+LMRG and RMRG words.
+
+MARGIN can only be executed in screen 0 (since only screen 0 has
+text folding).  It must be executed before any text has been
+buffered for the current line, and moves the cursor (if the left
+margin is non-zero) to the new left margin on the current line.
+
+If there is a non-zero left margin, clearing screen zero should
+position the cursor at the left margin of the top line of screen 0.
+
+The margin is used to control insets (as for the proposed
+"Illuminated Text Adventure").
+
+@subheading(Carriage Return Interrupt)
+
+Two new words, CRCNT and CRFUNC, are defined. Whenever the
+interpreter outputs a carriage return, it checks CRCNT, and if it
+is non-zero, decrements it.  If CRCNT reaches zero after such an
+operation, the contents of CRFUNC are called as as function
+address. This feature can be used to set up indenting around
+pictures.
+
+@subheading(Monospacing)
+
+Monospacing is sometimes desireable.  Consequently the
+HLIGHT opcode has been expanded to allow a monospacing
+"highlight" mode.
+
+@verbatim<
+HLIGHT	monospace:8				EXT:241>
+
+This opcode either selects a monospaced font if one is available,
+or modifies the screen display of a variable width font so that
+it appears monospaced.
+
+It has been pointed out that if the intent of using monospacing
+is to do something like tabs (i.e., go to some point on the
+screen and then print stuff), then CURSET and a variable width
+font are better.  Use of the @u(monospace) highlight mode should
+be reserved for cases (like the Translucent Maze in Enchanter)
+where all of the columns must line up.
+
+@newpage
+@heading(@u[Future Enhancements])
+
+The following sections deal with additional possible expansions
+to the interpreter. These deal with:
+
+@itemize<
+Character Set Compaction. Preliminary research indicates this
+would save about one percent in each game to use it. It may be
+worth doing at some point.
+
+Mouse Interaction. This would be very useful, and is only not
+included because there is no easy way to simulate it in ZIP20.
+It would be particularly effective on the various 68000 machines.
+
+Joystick and Button Input. Not as useful, but already implemented
+in DIP, and perhaps easy to put in for that reason.
+
+Extended Arithmetic. Easy to do, but no current need. If we ever
+do a Star Trek-like game it might be worthwhile.
+
+Communication.  Multi-play games may be the wave of the future.
+This stuff is spec'ed out and implemented in ZIP20. It waits for
+a proposal to use it.
+>
+
+Other miscellaneous stuff is included as well.
+
+@heading(@u[Character Set Compaction])
+
+Although our printing and reading character set is simple to
+encode and decode, it is inefficient. The characters in set 0
+(the lower case alphabetics) are not the 26 most common
+characters in the ascii character set. Similarly, our technique
+can represent 76 characters plus space in either one or two 5-bit
+bytes. The 77 characters we use are not the 77 most common ascii
+characters. Consequently, we waste a lot of space: over 600 bytes
+in a game such as Spellbreaker, and over 1000 bytes in Trinity.
+
+A general method of specifying character sets that permits
+flexibility and maximum efficiency of representation is to list
+the characters in each set explicitly.  This would be done by
+having a point (the CHRSET word) point to a table containing 78
+bytes, each byte a character. The first 26 bytes are character
+set 0, the second 26 are character set 1, and the third are
+character set 2. All other characters would be represented using
+the ascii escape. Space is in all sets.
+
+An interpreter could either set aside 76 bytes to copy this table
+into, or, if the machine is congenial, use the table directly.
+The ascii to zip-character and zip-character to ascii conversions
+would be an extension of the method used for character set 2
+currently.
+
+@heading(@u[Mouse Interaction])
+
+This specification for mouse interaction is based on the idea of
+using the mouse to select menu items or sensitive screen areas.
+Mouse motion is not supported, and the meaning of such things as
+single versus double clicking is left purposely unspecified.
+
+Mouse interaction is based on communicating tables of information
+to the game interpreter via special locations in the low area of
+the interpreter.
+
+@u[Direction Table (MSEDIR word)]
+
+This is an LTABLE which contains pairs of strings. The first
+member of a pair is the abbreviations of a direction, and the
+second is the "word" typed when the direction is selected.  The
+LTABLE must have at least 12 pairs in it, corresponding to the 12
+directions normally encountered in a game:
+
+@verbatim<
+DIRTBL:	24	;length, currently defined as 24
+	"N"	; display string for North, 0 = don't use
+	W?NORTH	; word it corresponds to
+	"NE"
+	W?NE
+	"E"
+	W?EAST
+	"SE"
+	W?SE
+	"S"
+	W?SOUTH
+	"SW"
+	W?SW
+	"W"
+	W?WEST
+	"NW"
+	W?NW
+	"U"
+	W?UP
+	"D"
+	W?DOWN
+	"IN"
+	W?IN
+	"OUT"
+	W?OUT
+>
+
+Selecting any of these should be the same as typing the
+direction on the input line.
+
+*Note: Should it also "type" a carriage-return? Perhaps that
+should be an option? Perhaps a bit in the MSETBL word?
+
+If a direction is not to be displayed, it is zeroed.  If it is to
+have a different abbreviation, then the slot is changed.  If the
+table has changed and should be updated on the screen, bit 0
+(%MCHDIR) of the mouse-table word (MSETBL) is turned on. The
+interpreter should check this word before each READ.
+
+@u[Inventory Table (MSEINV word)]
+
+This LTABLE contains the objects which should appear in the
+on-screen inventory. Selecting an object in the inventory should
+be equivalent to typing the short description of the inventory
+object in the input stream.  Double clicking the inventory object
+should be equivalent to typing "Drop the object."
+
+@verbatim<
+MSEINV:	length of table
+	object1		;the object's DESC is used in the menu
+	...
+	objectn
+>
+
+If the table has changed and should be updated on the screen, bit
+1 (%MCHINV) of the mouse-table word (MSETBL) should be turned on.
+The interpreter should check this word before each READ.
+
+@u[Frequent Verbs (MSEVRB word)]
+
+This LTABLE contains interesting words corresponding to
+interesting verbs (LOOK, TAKE, DROP, etc.).  Ideally, it
+should be changeable (like a scratchpad) by the user, to
+contain any interesting verbs that he has found useful.
+
+This table is only an initial setting for what one would
+expect to be a user-tailorable display, and as such would not be
+expected to normally change under game control.
+
+However, if the table has changed and should be updated on the
+screen, bit 2 (%MCHVRB) of the mouse-table word (MSETBL) should
+be turned on. The interpreter should check this word before each
+READ.
+
+@verbatim<
+MSEVRB:	length of table
+	string1
+	...
+	stringn
+>
+
+*Note: One interesting issue is exactly what gets stored in this
+table.  I suspect it should be read and converted by the
+interpreter.
+
+@u[Frequent Words (MSEWRD word)]
+
+This LTABLE is exactly like the previous one, but contains an
+initial selection of non-verb interesting words.
+
+This table is only an initial setting for what one would expect
+to be a user-tailorable display, and as such doesn't change, but
+if the table has changed and should be updated on the screen, bit
+3 (%MCHWRD) of the mouse-table word (MSETBL) is turned on.
+
+@u[The Mouse-Table Word]
+
+This word contains bits which tell the interpreter whether
+any of the mouse menu tables have changed.  If an interpreter
+notices that the MSETBL is non-zero, it should update the
+appropriate tables and then zero the word.  This would normally
+be done as part of each call to READ.
+
+The bits are defined as
+@verbatim<
+	0 %MCHDIR	1 = MSEDIR (direction table) changed
+	1 %MCHINV	1 = MSEINV (inventory table) changed
+	2 %MCHVRB	1 = MSEVRB (verb table) changed
+	3 %MCHWRD	1 = MSEWRD (phrase table) changed
+	4-15		reserved
+>
+
+@u[Output-to-Input Transfer]
+
+Text on the screen should be transferable to the input line
+by selecting it with the mouse and double-clicking.
+
+@u[Miscellaneous]
+
+Double-clicking might have different effects than just
+selecting. For example, double-click of a direction might
+mean the direction followed by a carriage return.
+Single-click might just type it in the input line.
+
+Display considerations are interesting.  There may not be
+room for all these windows.  Should they be pull-down
+(pop-up) menus?  What if none of the directions in a game
+are normal?  Still use a compass rose?
+
+@heading(@u[Joystick])
+
+This joystick and joystick button specification are borrowed more
+or less verbatim from DIP.
+
+@verbatim<
+READB	button:int				1OP:??/VAL>
+
+Reads the state of the @u(button).
+
+@verbatim<
+READJ	joystick:int				1OP:??/VAL>
+
+Reads the state of the @u(joystick).
+
+@verbatim<
+SETB	handler:fcn				1OP:??>
+
+Sets up the function pointed to by @u(handler) as the button handler.
+This function is called with two arguments -- the button id and
+the button value -- when a button event occurs.  A button event
+occurs when any button changes state ie. is depressed or
+released.  The button value is 1 if it is depressed and 0 if it
+is released.
+
+@verbatim<
+SETJ	handler:fcn				1OP:??>
+
+Sets up the function pointed to by @u<handler> as the joystick
+handler.  This function is called with two arguments -- the
+joystick id and the joystick value -- when a joystick event
+occurs.  A joystick event occurs when any joystick changes state
+ie. is moved.  The joystick value is described in greater detail
+below. See RETURN for the method of returning from this
+instruction.
+
+The READJ instruction returns the state of the joystick.  This
+state is an integer between 0 and 15 indicating one of the eight
+directions or the center.  If the joystick is in a given
+direction, then that bit is zero.  The first bit is the up bit,
+the second bit is the down bit, the third bit is the left bit and
+the fourth bit is the right bit of the joystick.  Thus if the
+joystick is pointing diagonally up and right, the bit assignment
+is 0110 and so the direction returned is 6.  The values returned
+by this instruction for the eight possible positions of the
+joystick are as shown:
+
+@verbatim<
+	@u(Bits)	@u(Value)	@u(Position)
+	1111	 15	Center
+	1110	  1	Up
+	1101	  2	Down
+	1011	  4	Left
+	0111	  8	Right
+	0110	  6	Up Right
+	1010	 10	Up Left
+	0101	  5	Down Right
+	0011	  3	Down Left
+>
+
+BUTTON and JOYSTICK store the pointer to the button and joystick
+event handler respectively.  These event handlers are functions
+that are called when the respective events occur.
+
+BSTAT and JSTAT store the status of the button and joystick when
+the button or joystick event occurs.
+
+@heading(@u[32-Bit Arithmetic])
+
+Some applications, such as the proposed Star Trek-like game,
+require more arithmetic precision. Consequently a 32-bit
+arithmetic opcode is defined.
+
+@verbatim<
+XARITH	op:int,operands:tbl			2OP:??>
+
+Takes an opcode and a table of operands.  The opcodes currently
+defined are:
+
+@verbatim<
+	@ux(Op)	@ux(Interpretation)
+	0	add
+	1	sub
+	2	mul
+	3	div/mod
+	4	equal?
+	5	grtr?	;note that less? is just the opposite
+>
+
+The @u(table) consists of three quad-words. The first quad-word
+contains the first operand, the second quad-word the second
+operand, and the third will contain the result.
+
+The size of the operators or result is limited to 16 bits in some
+cases. In such cases, they should be put in the @u(table) as
+though they were 32 bits wide. For example, a 16-bit operand in
+the first slot would consist of a word of zero and then a word
+containing the operand.
+
+Several chips support 32-bit arithmetic, but operands must he
+half-size in a couple of cases. Thus for multiplication, two
+16-bit operands yield a 32-bit result. For division and modulo, a
+32-bit operand is divided by a 16-bit operand to yield a 16-bit
+result and a 16-bit remainder.
+
+*Note: Stu points out that there may be an IEEE standard on this.
+
+For example,
+
+@verbatim[
+XTABLE:	<msb of operand 1>	;or zero
+	<lsb of operand 1>
+	<msb of operand 2>	;or zero
+	<lsb of operand 2>
+	<msb of result>		;or zero ;zero for predicates
+	<lsb of result>		;0 or 1 for predicates
+]
+
+@heading(@u[Communication])
+
+Multi-player games require communication interfaces.  DIRIN
+and DIROUT are expanded to do this, and a new opcode,
+READY?, is defined to check an i/o device to see if it is
+ready to receive or transmit data.
+
+DIRIN and DIROUT are expanded to take an additional device, called
+@u(comm) and numbered 5, which allows inter-machine
+communication.
+
+@verbatim<
+DIRIN	comm:int				EXT:244>
+
+DIRIN takes additional arguments when the first argument is 5.
+
+@verbatim<
+    DIRIN 5		receive input from @u(comm) device
+    DIRIN 5,0		close @u(comm) channel
+    DIRIN 5,name:tbl	open @u(comm) channel named @u(name)
+>
+
+@verbatim<
+DIROUT	comm:-5/5				EXT:243>
+
+DIROUT takes additional arguments when the first
+argument is 5.
+
+@verbatim<
+    DIROUT 5,0		close @u(comm) channel
+    DIROUT 5,tbl	define @u(comm) buffer
+    DIROUT -5		send a buffer on the @u(comm) channel
+>
+
+@verbatim<
+READY?	dev:int					EXT:??/PRED>
+
+READY? on a device returns non-false if there is input available
+for that device. It should work for the keyboard device (0) and
+the comm device (5).
+
+@subheading(Device Interaction)
+
+@undent[
+1 (screen): Interacts only with script device.
+
+2 (script): Interacts only with screen device.  All output to
+the screen in screen 0 is duplicated to the script channel.
+If the screen is off and scripting is on, output goes to
+script anyway.
+
+3 (table): Suppresses output to all other devices.  Any
+output to a table goes to the table only.
+
+4 (record): All input on the keyboard device is duplicated
+to the record device.  (This implies that if DIRIN
+has redirected input to a command file, the input
+from the command file will not be duplicated on
+the record device.)
+
+5 (communication): Suppresses all other output.
+]
+
+@heading(@u[Other Stuff])
+
+Other stuff that has been proposed, included here because there aren't
+any other obvious places.
+
+@subheading(UNDO)
+
+It would be user-friendly to allow an UNDO command on machines
+that can support it.  Obviously not all machines can implement
+this instruction. Doing it with two instructions gives the game
+writer flexibility in deciding when UNDOing is allowed, and at
+what points to make the "save" that UNDO restores.
+
+@verbatim<
+ISAVE						EXT:??/VAL>
+
+This instruction copies the impure area to a reserved part of
+core where it can be copied back by the IRESTORE command.  It
+returns 0 if it fails or if the instruction is not implemented on
+the machine.
+
+@verbatim<
+IRESTORE					EXT:??/VAL>
+
+This instruction causes the saved copy of the impure area to be
+copied back to the impure area, and thus is a single level UNDO
+command.  It returns 0 if it fails or if the instruction is not
+implemented on the machine.  If an ISAVE has never been executed
+successfully, IRESTORE should return 0.
+
+@subheading(Scrolling Back)
+
+It would be nice to be able to scroll back the output.
+Obviously not possible on all machines.
+
+@newpage
+@heading(@u[Machine Parameters])
+
+EZIP tells the game about itself by setting reserved
+locations in the virtual address space. The ones currently
+in use are ZVERSION, FLAGS, INTWRD and SCRWRD. The
+definitions of these locations must be changed, and some new
+locations added.
+
+The special locations in the low part of core are the same as
+before up through INTWRD (although some bit assignments have
+changed).  The new locations are:
+
+@verbatim<
+@ux(word)	@ux(name)		@ux(used for)
+17	HWRD		width of display in pixels
+18	VWRD		height of display in pixels
+19	FWRD		font height,,font width
+20	LMRG		left margin in pixels
+21	RMRG		right margin in pixels
+22	CLRWRD		foreground color,,background color
+23	TCHARS		pointer to table of terminating characters
+24	CRCNT		counter for carriage returns
+25	CRFUNC		function for carriage returns
+26	CHRSET		pointer to character set table
+
+(these words are defined for proposed future enhancements)
+
+27	MSETBL		mouse table change word
+28	MSEDIR		direction menu
+29	MSEINV		inventory menu
+30	MSEVRB		frequent verb menu
+31	MSEWRD		frequent word menu
+32	BUTTON		button handler
+33	JOYSTICK	joystick handler
+34	BSTAT		button status
+35	JSTAT		joystick status
+>
+
+@u[ZVERSION (Z-machine version)]
+
+ZVERSION consists of two bytes, VERSION and MODE. The VERSION
+byte for this version of ZIP will be 5.
+
+In the MODE byte, the current bit assignments are not terribly
+useful since all comtemplated EZIP machines implement most of
+them:  SPLIT, SCREEN, CLEAR, inverse video, CURSET and CURGET.
+The bits in the mode word are therefore reassigned as follows:
+
+@verbatim<
+	@ux(Bit #)	@ux(Interpretation)
+	0	COLOR operation available (0 = no)
+	1	DISPLAY operation available (0 = no)
+	2	bold style available (0 = no)
+	3	underline/italic style available (0 = no)
+	4	monospaced style available (0 = no)
+	5	sounds available (0 = no)
+	6-7	reserved
+>
+
+@u[FLAGS (16 user-settable flags)]
+
+The new bit assignments in FLAGS are:
+
+@verbatim<
+	@ux(Bit #)	@ux(Interpretation)
+	0	script bit (0 = off)
+	1-15	reserved
+>
+
+In future, monospaced fonts are selected with the HLIGHT
+operation, therefore bit 1 of FLAGS, previously used to
+indicate usage of a monospaced font, can be returned to the
+reserved list.
+
+@u[INTWRD (interpreter ID word)]
+
+No change required.
+
+@u[HWRD, VWRD, FWRD (screen parameters words)]
+
+It is necessary for the game, in certain situations, to know how
+large the screen is, and how large a standard character is in the
+currently selected font.
+
+Currently, the high byte of SCRWRD indicates the number of lines
+available on the screen, and the low byte indicates the number of
+characters per line.
+
+SCRWRD is replaced by three words, HWRD, VWRD, and FWRD. HWRD
+indicates the width of the screen in pixels. VWRD indicates the
+height of the screen in pixels. FWRD's high byte indicates the
+width of the characters in the currently selected font,
+and FWRD's low byte indicates the height of characters in the
+currently selected font (both in pixels).
+
+@u[LMRG and RMRG (margin words)]
+
+These contain the left and right margins, as set by MARGIN, in
+pixels. Initially, LMRG should be 0, and RMRG should be 0.
+
+@u[CLRWRD (color selection word)]
+
+This word consists of a high byte which gives the default screen
+background color, and a low byte which give the default screen
+foreground color.
+
+@u[TCHARS (terminal characters word)]
+
+Used by READ to decide which input characters to terminate on.
+This word points to a table, terminated by a zero byte, of bytes
+containing the characters to terminate on.  An end-of-line always
+terminates, whether it is explicitly in the table or not.
+
+@u[CRCNT (carriage return count word)]
+
+If non-zero, is decremented whenever a CRLF is output.
+
+@u[CRFUNC (carriage return function word)]
+
+Called when CRCNT reaches zero.
+
+@u[CHRSET (character set word)]
+
+This word points to a table of 78 bytes. The first 26 characters
+in it form character set 0, the second character set 1, and the
+third character set 2. All other characters would be represented
+using the ascii escape sequence. Space is defined to be in all
+character sets.
+
+@u[MSETBL (mouse tables changed word)]
+
+This word contains bits which are set to indicate that the game
+has changed one of the mouse menu tables.
+
+@u[MSEDIR (mouse direction menu word)]
+
+This word contains a pointer to the mouse direction menu.
+
+@u[MSEINV (mouse inventory menu word)]
+
+This word contains a pointer to the mouse inventory menu.
+
+@u[MSEVRB (mouse frequent verbs word)]
+
+This word contains a pointer to the mouse frequent verbs menu.
+
+@u[MSEWRD (mouse frequent words word)]
+
+This word contains a pointer to the mouse frequent words menu.
+
+@u[BUTTON (button event handler word)]
+
+Contains a pointer to the function which will handle button
+events.
+
+@u[JOYSTICK (joystick event handler word)]
+
+Contains a pointer to the function which will handle joystick
+events.
+
+@u[BSTAT (button status word)]
+
+Contains the state of the buttons.
+
+@u[JSTAT (joystick status word)]
+
+Contains the state of the joystick.
+
+@newpage
+@heading(@u[Summary of New Opcodes])
+
+The following opcodes have been defined or proposed in this
+document.
+
+@verbatim<
+@u(changed opcodes)
+
+READ	inbuf:tbl[,lexv:tbl][,time:int][,handler:fcn] EXT:228/VAL
+HLIGHT	monospace:8				EXT:241
+CURSET	y:int,x:int				EXT:239
+CURGET	output:tbl				EXT:240
+SCREEN	screen:int				EXT:235
+ERASE	op:int					EXT:238
+CLEAR	screen:int				EXT:237
+SAVE	[start:int,length:int,name:tbl]		EXT:256/VAL
+RESTORE	[start:int,length:int,name:tbl]		EXT:257/VAL
+INTBL?	item,tbl,len:int[,recspec:int]		EXT:247/VAL/PRED
+
+@u(new opcodes)
+
+EXTOP	opcode:int				0OP:190
+LEX	inbuf:tbl,lexv:tbl[,lexicon:tbl][,preserve:bool] EXT:251
+ZWSTR	inbuf:tbl,inlen:int,inbeg:int,zword:tbl	EXT:252
+ICALL1	routine:fcn				1OP:143
+ICALL2	routine:fcn,arg1:any			2OP:26
+ICALL	routine:fcn,arg1:any,arg2:any,arg3:any	EXT:249
+IXCALL	routine:fcn,arg1,...			EXT:250
+ORIGINAL?					0OP:191/PRED
+COPYT	source:tbl,dest:tbl,length:int		EXT:253
+PRINTT	bytes:tbl,width:int[,height:int]	EXT:254
+COLOR	fore:int,back:int			2OP:27
+CATCH						EXT:185/VAL
+THROW	any,frame				2OP:28
+ASSIGNED? opt:var				EXT:255/PRED
+SHIFT	int,n					EXT:258/VAL
+ASHIFT	int,n					EXT:259/VAL
+
+@u(opcode changed and recycled)
+
+BCOM	int					EXT:248/VAL
+
+@u(opcode removed and recycled)
+
+FSTACK						0OP:185
+
+@u(static graphics: future implementation)
+
+FONT	font:int				EXT:260/VAL
+DISPLAY	picture:int,x:int,y:int			EXT:261
+PICINF	picture:int,data:tbl			EXT:262/PRED
+DCLEAR	picture:int,x:int,y:int			EXT:263
+MARGIN	left:int,right:int			EXT:264
+
+@u(joystick and buttons: future implementation)
+
+READB	button:int				1OP:??/VAL
+READJ	joystick:int				1OP:??/VAL
+SETB	handler:fcn				1OP:??
+SETJ	handler:fcn				1OP:??
+
+@u(miscellaneous: future implementation)
+
+XARITH	op:int,operands:tbl			2OP:??
+ISAVE						EXT:??/VAL
+IRESTORE					EXT:??/VAL
+DIRIN	comm:int				EXT:244
+DIROUT	comm:-5/5				EXT:243
+READY?	dev:int					EXT:??/PRED
+>

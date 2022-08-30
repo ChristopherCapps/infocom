@@ -1,0 +1,3372 @@
+[
+  {
+    "dir": "gamefiles",
+    "filename": "abyss-r1-s890320.z6",
+    "type": "z6",
+    "serial": "890320",
+    "release": "1",
+    "md5": "ec9922b29e2a9ed7dbee9d9fe25046d5",
+    "updated": "Fri Jun  7 19:36:37 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-first-r1-s841226.z3",
+    "type": "z3",
+    "serial": "841226",
+    "release": "1",
+    "tags": "-first",
+    "comment": "Test version, labelled \"first.zip\".",
+    "md5": "af8f2ec5b6cc7c5d90b107a50e600c86",
+    "updated": "Fri Jun  7 19:36:37 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-fullalpha-r84-s850516.z4",
+    "type": "z4",
+    "serial": "850516",
+    "release": "84",
+    "tags": "-fullalpha",
+    "comment": "Test version, labelled \"fullalpha.zip\".",
+    "md5": "13c7d4ce19aa08c69473416557d36396",
+    "updated": "Fri Jun  7 19:36:37 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-gamma-r131-s850628.z4",
+    "type": "z4",
+    "serial": "850628",
+    "release": "131",
+    "tags": "-gamma",
+    "comment": "Test version, labelled \"gamma.zip\".",
+    "md5": "4879016488d76608fc39841718105b9f",
+    "updated": "Fri Jun  7 19:36:38 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-prealpha-r47-s850313.z4",
+    "type": "z4",
+    "serial": "850313",
+    "release": "47",
+    "tags": "-prealpha",
+    "comment": "Test version, labelled \"prealpha.zip\".",
+    "md5": "c01ab900834ea108f1c318f2c52a6f25",
+    "updated": "Fri Jun  7 19:36:38 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-r77-s850814.z4",
+    "type": "z4",
+    "serial": "850814",
+    "release": "77",
+    "comment": "Masterpieces version.",
+    "md5": "c9c0b36e7b3a93acd5174169d91d793f",
+    "updated": "Fri Jun  7 19:36:38 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "amfv-r79-s851122.z4",
+    "type": "z4",
+    "serial": "851122",
+    "release": "79",
+    "md5": "4787ceeec990c5bafc8767a50e2cf301",
+    "updated": "Sun Jun  9 16:06:31 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "arthur-r40-s890502.z6",
+    "type": "z6",
+    "serial": "890502",
+    "release": "40",
+    "md5": "8220c093e7e79b08a2b2144a01c5af50",
+    "updated": "Fri Jun  7 19:36:38 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "arthur-r41-s890504.z6",
+    "type": "z6",
+    "serial": "890504",
+    "release": "41",
+    "md5": "034c758c724084f83c8d8f18f00127b8",
+    "updated": "Fri Jun  7 19:36:39 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "arthur-r54-s890606.z6",
+    "type": "z6",
+    "serial": "890606",
+    "release": "54",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "453e525ef75c64c95a8e07ccc620198a",
+    "updated": "Sun Jun  9 16:06:30 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "arthur-r63-s890622.z6",
+    "type": "z6",
+    "serial": "890622",
+    "release": "63",
+    "md5": "7848bd8b8f1fe6fd2b023ced7fa98019",
+    "updated": "Sun Jun  9 16:06:31 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "arthur-r74-s890714.z6",
+    "type": "z6",
+    "serial": "890714",
+    "release": "74",
+    "comment": "Masterpieces version, PC.",
+    "md5": "dc8416f4168b47b2e7694fccdaa13d56",
+    "updated": "Fri Jun  7 19:36:39 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "ballyhoo-r97-s851218.z3",
+    "type": "z3",
+    "serial": "851218",
+    "release": "97",
+    "comment": "Masterpieces version.",
+    "md5": "5d54e326815b0ed3aff8efb8ff02ef2f",
+    "updated": "Fri Jun  7 19:36:39 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "ballyhoo-r99-s861014.z3",
+    "type": "z3",
+    "serial": "861014",
+    "release": "99",
+    "md5": "2d26dc8116892900d0bf1a742d3f3649",
+    "updated": "Fri Jun  7 19:36:40 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-alpha-r1-s870412.z5",
+    "type": "z5",
+    "serial": "870412",
+    "release": "1",
+    "tags": "-alpha",
+    "comment": "Testing version, \"alpha\".",
+    "md5": "6d6bb48e4ecb2fb87763e3f7d22ed0eb",
+    "updated": "Fri Jun  7 19:36:40 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-beta-r1-s870715.z5",
+    "type": "z5",
+    "serial": "870715",
+    "release": "1",
+    "tags": "-beta",
+    "comment": "Testing version, \"beta\".",
+    "md5": "6647190df48823e3b50fea599569036a",
+    "updated": "Fri Jun  7 19:36:40 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-r47-s870915.z5",
+    "type": "z5",
+    "serial": "870915",
+    "release": "47",
+    "md5": "3671853351bf84f4ca3263cd159ce685",
+    "updated": "Sun Jun  9 16:06:30 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-r49-s870917.z5",
+    "type": "z5",
+    "serial": "870917",
+    "release": "49",
+    "md5": "24f9ded94a74d688916183358987dcca",
+    "updated": "Sun Jun  9 16:06:30 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-r51-s870923.z5",
+    "type": "z5",
+    "serial": "870923",
+    "release": "51",
+    "md5": "1bbf43828d95bb94feee52262da96472",
+    "updated": "Fri Jun  7 19:36:41 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-r57-s871221.z5",
+    "type": "z5",
+    "serial": "871221",
+    "release": "57",
+    "comment": "Masterpieces version.",
+    "md5": "c8d08c8ae50e845a197f1831e1beee5c",
+    "updated": "Fri Jun  7 19:36:41 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "beyondzork-r60-s880610.z5",
+    "type": "z5",
+    "serial": "880610",
+    "release": "60",
+    "md5": "24bbc449fa19cfc892d54ae727dbe263",
+    "updated": "Fri Jun  7 19:36:41 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "borderzone-r9-s871008.z5",
+    "type": "z5",
+    "serial": "871008",
+    "release": "9",
+    "comment": "Masterpieces version.",
+    "md5": "2197c5ea8a0649d3900134a3814a0488",
+    "updated": "Fri Jun  7 19:36:42 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "bureaucracy-r116-s870602.z4",
+    "type": "z4",
+    "serial": "870602",
+    "release": "116",
+    "comment": "Masterpieces version.",
+    "md5": "6fb8c33765e7cdc59c9a3c4e0725b745",
+    "updated": "Fri Jun  7 19:36:42 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "bureaucracy-r160-s880521.z4",
+    "type": "z4",
+    "serial": "880521",
+    "release": "160",
+    "md5": "c18bafa2c1a187ffbb8a148b372c1cb8",
+    "updated": "Fri Jun  7 19:36:42 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "bureaucracy-r86-s870212.z4",
+    "type": "z4",
+    "serial": "870212",
+    "release": "86",
+    "md5": "eb752917f2f1c88e3f2ee9eb29243516",
+    "updated": "Sun Jun  9 16:06:29 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "cutthroats-r23-s840809.z3",
+    "type": "z3",
+    "serial": "840809",
+    "release": "23",
+    "comment": "Masterpieces version.",
+    "md5": "ec7d273fd79d4a7dd69a9bf7001f6193",
+    "updated": "Fri Jun  7 19:36:42 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "cutthroats-r25-s840917.z3",
+    "type": "z3",
+    "serial": "840917",
+    "release": "25",
+    "md5": "2341da6877f33760a82d4073ec43c317",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r18-s820311.z3",
+    "type": "z3",
+    "serial": "820311",
+    "release": "18",
+    "md5": "d5a75eb79d3ef54348d8eaa39f88b5c1",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r19-s820427.z3",
+    "type": "z3",
+    "serial": "820427",
+    "release": "19",
+    "md5": "b08f2a8d0c1b43dde756d1201056d035",
+    "updated": "Sun Jun  9 16:06:29 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r21-s820512.z3",
+    "type": "z3",
+    "serial": "820512",
+    "release": "21",
+    "md5": "a27fd98b37aae58a431e45faaead46d0",
+    "updated": "Sun Jun  9 16:06:29 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r22-s820809.z3",
+    "type": "z3",
+    "serial": "820809",
+    "release": "22",
+    "md5": "89dd7c3a902dbd07ac2d7a998e626f3e",
+    "updated": "Sun Jun  9 16:06:29 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r26-s821108.z3",
+    "type": "z3",
+    "serial": "821108",
+    "release": "26",
+    "md5": "e307caeb9f9d1022b16f1bcf77edc651",
+    "updated": "Sun Jun  9 16:06:29 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r27-s831005.z3",
+    "type": "z3",
+    "serial": "831005",
+    "release": "27",
+    "comment": "Masterpieces version.",
+    "md5": "b7361f0ac3200b6a9b84429cfae1b2e3",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "deadline-r28-s850129.z3",
+    "type": "z3",
+    "serial": "850129",
+    "release": "28",
+    "md5": "52b73f87fa39ea1e26547f69f34836fe",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-mac-r16-s840518.z3",
+    "type": "z3",
+    "serial": "840518",
+    "release": "16",
+    "tags": "-mac",
+    "md5": "2a1cae9562f7ed2340f583599d174081",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r10-s830810.z3",
+    "type": "z3",
+    "serial": "830810",
+    "release": "10",
+    "md5": "b7d4e4d549288c8ccd7a6ea3fa63ad1c",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r15-s831107.z3",
+    "type": "z3",
+    "serial": "831107",
+    "release": "15",
+    "md5": "4ba1f22ecb5a6d1644b0bdb2949007e7",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r15-s999999.z3",
+    "type": "z3",
+    "serial": "999999",
+    "release": "15",
+    "comment": "Differs from r15 s831107 only in the effaced serial number.",
+    "md5": "f712e7a77552a5c99c391ed90e17ba46",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r16-s831118.z3",
+    "type": "z3",
+    "serial": "831118",
+    "release": "16",
+    "md5": "8033a976d89669e3480942e9363d194b",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r24-s851118.z3",
+    "type": "z3",
+    "serial": "851118",
+    "release": "24",
+    "md5": "ad3cdea88d81033fe29167688bd98c31",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "enchanter-r29-s860820.z3",
+    "type": "z3",
+    "serial": "860820",
+    "release": "29",
+    "comment": "Masterpieces version.",
+    "md5": "1cbfd0c27a1b61b12ab013b848ff83e9",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "generic-r3-s851007.z3",
+    "type": "z3",
+    "serial": "851007",
+    "release": "3",
+    "md5": "1dd30e815f74bdeb3a16d92b58b5d92a",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "generic-r5-s870612.z3",
+    "type": "z3",
+    "serial": "870612",
+    "release": "5",
+    "md5": "494601a9f0385725fab6433f0b3e891b",
+    "updated": "Fri Jun  7 19:36:43 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "generic-r6-s850705.z4",
+    "type": "z4",
+    "serial": "850705",
+    "release": "6",
+    "md5": "149661bd1a74d062a7407ae8713d518e",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-beta1-r108-s840809.z3",
+    "type": "z3",
+    "serial": "840809",
+    "release": "108",
+    "tags": "-beta1",
+    "comment": "Test version, labelled \"beta1.zip\".",
+    "md5": "703404a8162b573ce7a4f3a54d7a433c",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-beta2-r119-s840822.z3",
+    "type": "z3",
+    "serial": "840822",
+    "release": "119",
+    "tags": "-beta2",
+    "comment": "Test version, labelled \"beta2.zip\".",
+    "md5": "d47017ffba51c5614b5ae0d6497fd26e",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-invclues-r31-s871119.z5",
+    "type": "z5",
+    "serial": "871119",
+    "release": "31",
+    "tags": "-invclues",
+    "md5": "c44b2cd392b505c123fade5dfe1e1be0",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r42-s850323.z3",
+    "type": "z3",
+    "serial": "850323",
+    "release": "42",
+    "comment": "A hack of r56 with both the serial number and release (42, sure pal) changed. This is a rare example of a dateable user hack.",
+    "md5": "234a4bbc30a3867e8eedb754b1741222",
+    "updated": "Sun Jun  9 16:06:28 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r47-s840914.z3",
+    "type": "z3",
+    "serial": "840914",
+    "release": "47",
+    "md5": "4050ccee81d60558a985e04ab8707c64",
+    "updated": "Sun Jun  9 16:06:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r56-s841221.z3",
+    "type": "z3",
+    "serial": "841221",
+    "release": "56",
+    "md5": "9b2a500cc3705e3f5f935962617d9e8b",
+    "updated": "Sun Jun  9 16:06:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r58-s851002.z3",
+    "type": "z3",
+    "serial": "851002",
+    "release": "58",
+    "md5": "1833cd765a57fcf3210972838a4c1aaf",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r59-s851108.z3",
+    "type": "z3",
+    "serial": "851108",
+    "release": "59",
+    "comment": "douglasadams.com / BBC version.",
+    "md5": "6666389f60e0c8e4ceb08242a263bb52",
+    "updated": "Fri Jun  7 19:36:44 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hitchhiker-r60-s861002.z3",
+    "type": "z3",
+    "serial": "861002",
+    "release": "60",
+    "md5": "925fc08f246d5ceee6f88e9921f2e975",
+    "updated": "Fri Jun  7 19:36:45 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hollywoodhijinx-gamma-r235-s861118.z3",
+    "type": "z3",
+    "serial": "861118",
+    "release": "235",
+    "tags": "-gamma",
+    "md5": "1ea91a064941a3f612b20833f0a47df7",
+    "updated": "Sun Jun  9 16:06:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hollywoodhijinx-r37-s861215.z3",
+    "type": "z3",
+    "serial": "861215",
+    "release": "37",
+    "comment": "Masterpieces version.",
+    "md5": "c528811e6058d840369af44344c8f202",
+    "updated": "Fri Jun  7 19:36:45 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hypochondriac-r1-s840427.z3",
+    "type": "z3",
+    "serial": "840427",
+    "release": "1",
+    "comment": "Modified Enchanter.",
+    "md5": "97d449d068e4d7624639653b260ba455",
+    "updated": "Mon Jan  4 21:39:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hypochondriac-r10-s840826.z3",
+    "type": "z3",
+    "serial": "840826",
+    "release": "10",
+    "comment": "Heavily modified Zork.",
+    "md5": "df3de142e2ec52652dfbd3dc530a30c5",
+    "updated": "Mon Jan  4 21:39:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hypochondriac-r11-s870225.z3",
+    "type": "z3",
+    "serial": "870225",
+    "release": "11",
+    "comment": "Hypochondriac per se.",
+    "md5": "9bbbfa60c026ca4ec5ace7237a3ab360",
+    "updated": "Sat Dec 14 13:10:16 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "hypochondriac-r2-s840505.z3",
+    "type": "z3",
+    "serial": "840505",
+    "release": "2",
+    "comment": "Modified Enchanter.",
+    "md5": "dd1baafd029f48dfaaf2aa245d3604c2",
+    "updated": "Mon Jan  4 21:39:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "infidel-mac-r22-s840522.z3",
+    "type": "z3",
+    "serial": "840522",
+    "release": "22",
+    "tags": "-mac",
+    "md5": "ae0c24d787c32d846c3f5761d82113d6",
+    "updated": "Fri Jun  7 19:36:45 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "infidel-r22-s830916.z3",
+    "type": "z3",
+    "serial": "830916",
+    "release": "22",
+    "comment": "Masterpieces version.",
+    "md5": "2fe5b5693fa60b0cf8621402423994b1",
+    "updated": "Fri Jun  7 19:36:45 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-dev-r142-s890205.z6",
+    "type": "z6",
+    "serial": "890205",
+    "release": "142",
+    "tags": "-dev",
+    "comment": "\"Internal Release. Not For Distribution\".",
+    "md5": "c072671d7d4f5d23e91abeba637f0452",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-dev-r46-s880603.z5",
+    "type": "z5",
+    "serial": "880603",
+    "release": "46",
+    "tags": "-dev",
+    "comment": "Prototype, still z5.",
+    "md5": "51c956984463ccdee1b854bafed92efe",
+    "updated": "Mon Jan  4 22:17:28 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r10-s890313.z6",
+    "type": "z6",
+    "serial": "890313",
+    "release": "10",
+    "md5": "e5ae98a31d581a96d04cacb6b21d5544",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r11-s890304.z6",
+    "type": "z6",
+    "serial": "890304",
+    "release": "11",
+    "md5": "19780dcafcf09f57e2c17e015313d93b",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r2-s890303.z6",
+    "type": "z6",
+    "serial": "890303",
+    "release": "2",
+    "md5": "9260fadeeb07e8e5b67013a1bb00aa77",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r26-s890316.z6",
+    "type": "z6",
+    "serial": "890316",
+    "release": "26",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "5b8a74dc3b15eacb8a38f722c4aac792",
+    "updated": "Sun Jun  9 16:06:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r3-s890310.z6",
+    "type": "z6",
+    "serial": "890310",
+    "release": "3",
+    "md5": "d8a28ec43be8f9991f0ab4a38d7eedea",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r30-s890322.z6",
+    "type": "z6",
+    "serial": "890322",
+    "release": "30",
+    "md5": "a4421c55dc726a02ea7446982d7b7978",
+    "updated": "Sun Jun  9 16:06:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r5-s890310.z6",
+    "type": "z6",
+    "serial": "890310",
+    "release": "5",
+    "md5": "02f75cb2b6f5bb7e11a6d794e0527a38",
+    "updated": "Mon Jan  4 21:58:46 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r51-s890522.z6",
+    "type": "z6",
+    "serial": "890522",
+    "release": "51",
+    "md5": "6265ecfde325e7e4364d10d89fe9bb9d",
+    "updated": "Mon Jan  4 21:58:47 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r54-s890526.z6",
+    "type": "z6",
+    "serial": "890526",
+    "release": "54",
+    "md5": "67b6d6bd20b7d683be2111162c95bb29",
+    "updated": "Fri Jun  7 19:36:46 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r76-s890615.z6",
+    "type": "z6",
+    "serial": "890615",
+    "release": "76",
+    "comment": "Reconstructed from split disk files by Alessandro Giassi.",
+    "md5": "43123a3b2d681dd728fb8cf498dbcde5",
+    "updated": "Tue Jan  4 16:03:01 2022"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r77-s890616.z6",
+    "type": "z6",
+    "serial": "890616",
+    "release": "77",
+    "md5": "455925fce7c95a3a81472fd2ec498c22",
+    "updated": "Sun Jun  9 16:06:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r79-s890627.z6",
+    "type": "z6",
+    "serial": "890627",
+    "release": "79",
+    "md5": "246c3c7e6af93d15627c8bacde4a1a20",
+    "updated": "Fri Jun  7 19:36:47 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "journey-r83-s890706.z6",
+    "type": "z6",
+    "serial": "890706",
+    "release": "83",
+    "comment": "Masterpieces version, PC.",
+    "md5": "5c47f7e1ee323077920e869da084fe34",
+    "updated": "Fri Jun  7 19:36:47 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-alpha-r57-s860121.z3",
+    "type": "z3",
+    "serial": "860121",
+    "release": "57",
+    "tags": "-alpha",
+    "comment": "Testing version, \"alpha\".",
+    "md5": "2f58ee97065b4e94b5c71329f0d6e023",
+    "updated": "Fri Jun  7 19:36:48 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-beta-r118-s860325.z3",
+    "type": "z3",
+    "serial": "860325",
+    "release": "118",
+    "tags": "-beta",
+    "comment": "Testing version, \"beta\".",
+    "md5": "02dc6760631f1c5e67c985f68d2d03f0",
+    "updated": "Fri Jun  7 19:36:48 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-first-r1-s851008.z3",
+    "type": "z3",
+    "serial": "851008",
+    "release": "1",
+    "tags": "-first",
+    "comment": "Testing version, \"first\".",
+    "md5": "93210e09fd7061f1cbbf5d0f81c2c1fb",
+    "updated": "Fri Jun  7 19:36:48 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-gamma-r160-s860521.z3",
+    "type": "z3",
+    "serial": "860521",
+    "release": "160",
+    "tags": "-gamma",
+    "comment": "Testing version, \"gamma\".",
+    "md5": "57d2ad52822c74f348a7fa8022e595e6",
+    "updated": "Fri Jun  7 19:36:48 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-invclues-r4-s880405.z5",
+    "type": "z5",
+    "serial": "880405",
+    "release": "4",
+    "tags": "-invclues",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "a2915d33dfa3e029b727684e734de303",
+    "updated": "Fri Jun  7 19:36:49 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-r0-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "0",
+    "comment": "This is identical to r50 s860711 except for release and serial.",
+    "md5": "2d8e3e3a1a3fcca995750cbe9e6d9571",
+    "updated": "Sat Feb  8 17:43:54 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-r50-s860711.z3",
+    "type": "z3",
+    "serial": "860711",
+    "release": "50",
+    "md5": "08598bfc22acfa24b147f1dc76eec2b4",
+    "updated": "Sun Jun  9 16:06:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-r59-s000001.z3",
+    "type": "z3",
+    "serial": "000001",
+    "release": "59",
+    "comment": "Another hack.",
+    "md5": "9ad67a38289278dfdb028da23d779f67",
+    "updated": "Sun Jun  9 16:06:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "leathergoddesses-r59-s860730.z3",
+    "type": "z3",
+    "serial": "860730",
+    "release": "59",
+    "comment": "Masterpieces version, PC.",
+    "md5": "007a88dd76a4981616b631a355fd6caa",
+    "updated": "Fri Jun  7 19:36:49 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "lurkinghorror-r203-s870506.z3",
+    "type": "z3",
+    "serial": "870506",
+    "release": "203",
+    "comment": "Masterpieces version.",
+    "md5": "3911b9343a6aa36e46bdeb4ee91928f4",
+    "updated": "Fri Jun  7 19:36:49 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "lurkinghorror-r219-s870912.z3",
+    "type": "z3",
+    "serial": "870912",
+    "release": "219",
+    "md5": "c13765e6a52aafc86fd9be248ebff4d5",
+    "updated": "Sun Jun  9 16:06:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "lurkinghorror-r221-s870918.z3",
+    "type": "z3",
+    "serial": "870918",
+    "release": "221",
+    "md5": "e54305d07d08f3f414671ad1d6e1505f",
+    "updated": "Fri Jun  7 19:36:49 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "minizork-r2-s840207.z3",
+    "type": "z3",
+    "serial": "840207",
+    "release": "2",
+    "md5": "bd2b571ec1c1a3cea017ea6f63d961f4",
+    "updated": "Fri Jun  7 19:36:50 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "minizork-r34-s871124.z3",
+    "type": "z3",
+    "serial": "871124",
+    "release": "34",
+    "md5": "e9fc04a4e4576c547dac32af77be434c",
+    "updated": "Fri Jun  7 19:36:50 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "minizork2-r2-s871123.z3",
+    "type": "z3",
+    "serial": "871123",
+    "release": "2",
+    "md5": "67821b73a35fddd0b7acbaa20554ffc4",
+    "updated": "Fri Jun  7 19:36:50 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "moonmist-beta-r65-s86082X.z3",
+    "type": "z3",
+    "serial": "86082X",
+    "release": "65",
+    "tags": "-beta",
+    "comment": "Labelled \"beta\" in the patch archive. The high release number supports this assumption. This version was reconstructed from a damaged copy by Alessandro Giassi and Matthew Russotto. The serial number is inferred from a build list found with the source. See [announcement](https://intfiction.org/t/announcing-a-new-infocom-story-file/47908).",
+    "md5": "46afbb19930c3da27800085b545a233a",
+    "updated": "Wed Oct 21 22:54:54 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "moonmist-beta-r65-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "65",
+    "tags": "-beta",
+    "comment": "The damaged version of the above \"beta\" game file. This appears to have been corrupted after being copied and compressed with Dalton's Disk Disintegrator.",
+    "md5": "44397569bfeb3e325321dd1d02014f3d",
+    "updated": "Sun Jun  9 16:06:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "moonmist-r13-s880501.z3",
+    "type": "z3",
+    "serial": "880501",
+    "release": "13",
+    "md5": "9140847aa7d307acd905b0d900536f2b",
+    "updated": "Fri Jun  7 19:36:50 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "moonmist-r4-s860918.z3",
+    "type": "z3",
+    "serial": "860918",
+    "release": "4",
+    "md5": "b785826afd33860366d51246b848a717",
+    "updated": "Sun Jun  9 16:06:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "moonmist-r9-s861022.z3",
+    "type": "z3",
+    "serial": "861022",
+    "release": "9",
+    "comment": "Masterpieces version.",
+    "md5": "2a4d167f35792d415c243f61b4ff0923",
+    "updated": "Fri Jun  7 19:36:50 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "nordandbert-r19-s870722.z4",
+    "type": "z4",
+    "serial": "870722",
+    "release": "19",
+    "comment": "Masterpieces version.",
+    "md5": "fb5dc5737a446c287a34c3a3e0b1edfc",
+    "updated": "Fri Jun  7 19:36:51 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "nordandbert-r20-s870722.z4",
+    "type": "z4",
+    "serial": "870722",
+    "release": "20",
+    "md5": "ba9c3f180e691ce4b4ceb14e0d713024",
+    "updated": "Fri Jun  7 19:36:51 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-beta-r1-s830517.z3",
+    "type": "z3",
+    "serial": "830517",
+    "release": "1",
+    "tags": "-beta",
+    "md5": "a413647c8c9bfbfa34d9e5b709ed19bd",
+    "updated": "Mon Jan  4 19:26:05 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-invclues-r10-s880531.z5",
+    "type": "z5",
+    "serial": "880531",
+    "release": "10",
+    "tags": "-invclues",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "1df938b320af642219bdb0deb99a0902",
+    "updated": "Fri Jun  7 19:36:51 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-r20-s830708.z3",
+    "type": "z3",
+    "serial": "830708",
+    "release": "20",
+    "md5": "31c87f07f462fccf4ec18ae75759047d",
+    "updated": "Sun Jun  9 16:06:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-r26-s831014.z3",
+    "type": "z3",
+    "serial": "831014",
+    "release": "26",
+    "md5": "6832c694b6b83d71214ac54f398f8b4b",
+    "updated": "Sun Jun  9 16:06:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-r29-s840118.z3",
+    "type": "z3",
+    "serial": "840118",
+    "release": "29",
+    "md5": "6487dc814b280f5603c53155de378d27",
+    "updated": "Sun Jun  9 16:06:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-r37-s851003.z3",
+    "type": "z3",
+    "serial": "851003",
+    "release": "37",
+    "comment": "Masterpieces version, PC.",
+    "md5": "68e31f85afdcadb00b42345336e2d6e7",
+    "updated": "Fri Jun  7 19:36:51 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "planetfall-r39-s880501.z3",
+    "type": "z3",
+    "serial": "880501",
+    "release": "39",
+    "md5": "4c8cc23e8c9dcf1eef1cddcd7f6dc8e0",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "plunderedhearts-r26-s870730.z3",
+    "type": "z3",
+    "serial": "870730",
+    "release": "26",
+    "comment": "Masterpieces version.",
+    "md5": "29fc7b270af2fbd406a0548a8298da7f",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "restaurant-r15-s880512.z5",
+    "type": "z5",
+    "serial": "880512",
+    "release": "15",
+    "md5": "c5d2843439321a03b9775db05f809719",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "restaurant-r184-s890412.z6",
+    "type": "z6",
+    "serial": "890412",
+    "release": "184",
+    "md5": "a0af8516e821ce20c7e814303eec3dbc",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-1b-r8-s870119.z3",
+    "type": "z3",
+    "serial": "870119",
+    "release": "8",
+    "tags": "-1b",
+    "md5": "c3310816050001b92487f25451f9e73d",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-1z-r15-s840330.z3",
+    "type": "z3",
+    "serial": "840330",
+    "release": "15",
+    "tags": "-1z",
+    "md5": "74163af08428d7e7df92be63f15f4681",
+    "updated": "Fri Jun  7 19:36:52 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-2zt-r8-s870601.z3",
+    "type": "z3",
+    "serial": "870601",
+    "release": "8",
+    "tags": "-2zt",
+    "md5": "a88e731c6fb65d9d763006cb2a96287f",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-3zpi-r5-s840512.z3",
+    "type": "z3",
+    "serial": "840512",
+    "release": "5",
+    "tags": "-3zpi",
+    "md5": "6f9783bcc53bce80109d1c27f3dbfa6b",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-3ztl-r97-s870601.z3",
+    "type": "z3",
+    "serial": "870601",
+    "release": "97",
+    "tags": "-3ztl",
+    "md5": "c3a056e4039b986127468a05e30a9093",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-4zpiw-r24-s840627.z3",
+    "type": "z3",
+    "serial": "840627",
+    "release": "24",
+    "tags": "-4zpiw",
+    "md5": "7ec128b35e792d208c7aeae932dd404f",
+    "updated": "Sat Nov 21 21:10:19 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-4zpiw-r26-s840731.z3",
+    "type": "z3",
+    "serial": "840731",
+    "release": "26",
+    "tags": "-4zpiw",
+    "md5": "ecb00d5e2d40f2d6833b7a135ae215e0",
+    "updated": "Sat Feb  8 17:55:57 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-4zpiw-r52-s850402.z3",
+    "type": "z3",
+    "serial": "850402",
+    "release": "52",
+    "tags": "-4zpiw",
+    "md5": "f14d76c01ceaea1ad7c0ad697d2c5504",
+    "updated": "Sat Feb  8 17:55:57 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-4zpiw-r53-s850407.z3",
+    "type": "z3",
+    "serial": "850407",
+    "release": "53",
+    "tags": "-4zpiw",
+    "md5": "fbb8fa8365720cfcc79654bb7de82450",
+    "updated": "Sat Feb  8 17:55:57 2020"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sampler-4zpiw-r55-s850823.z3",
+    "type": "z3",
+    "serial": "850823",
+    "release": "55",
+    "tags": "-4zpiw",
+    "md5": "8c6f2d966dc2ae145d83c340c0d694e1",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-atari-r15-s840522.z3",
+    "type": "z3",
+    "serial": "840522",
+    "release": "15",
+    "tags": "-atari",
+    "md5": "82a3e2e07e0a2715982c59519bf236a8",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-atari-r17-s850208.z3",
+    "type": "z3",
+    "serial": "850208",
+    "release": "17",
+    "tags": "-atari",
+    "md5": "c86842b456464c6b21bd532975059641",
+    "updated": "Fri Jun  7 19:36:53 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-beta-r86-s840320.z3",
+    "type": "z3",
+    "serial": "840320",
+    "release": "86",
+    "tags": "-beta",
+    "md5": "ee339dbdbb0792f67e20bd71bafe0ea5",
+    "updated": "Sun Jun  9 16:06:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-coco-r15-s840612.z3",
+    "type": "z3",
+    "serial": "840612",
+    "release": "15",
+    "tags": "-coco",
+    "md5": "9e6dbfede248d5200d4e7e949e092e3c",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-mac-r15-s840522.z3",
+    "type": "z3",
+    "serial": "840522",
+    "release": "15",
+    "tags": "-mac",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "82a3e2e07e0a2715982c59519bf236a8",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-nonatari-r17-s850208.z3",
+    "type": "z3",
+    "serial": "850208",
+    "release": "17",
+    "tags": "-nonatari",
+    "md5": "3cae73bd2b7501609445fdd07ea7e616",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-r15-s840501.z3",
+    "type": "z3",
+    "serial": "840501",
+    "release": "15",
+    "md5": "b9197ad6efdad5cb743bd84eccd08b1a",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-r16-s850515.z3",
+    "type": "z3",
+    "serial": "850515",
+    "release": "16",
+    "md5": "a4888a6a0c1722cfcbeffe61f551a5c1",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-r16-s850603.z3",
+    "type": "z3",
+    "serial": "850603",
+    "release": "16",
+    "comment": "Masterpieces version, PC.",
+    "md5": "9076a8eba9b056336cf4ba88096b7945",
+    "updated": "Fri Jun  7 19:36:54 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-r18-s850919.z3",
+    "type": "z3",
+    "serial": "850919",
+    "release": "18",
+    "md5": "0c41912ca9c8f92e9cca8df64f8d7007",
+    "updated": "Fri Jun  7 19:36:55 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-reg-r16-s850603.z3",
+    "type": "z3",
+    "serial": "850603",
+    "release": "16",
+    "tags": "-reg",
+    "md5": "89b0ece4376ab49ba81c1e7da2ef15cf",
+    "updated": "Fri Jun  7 19:36:55 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "seastalker-tandy-r15-s840716.z3",
+    "type": "z3",
+    "serial": "840716",
+    "release": "15",
+    "tags": "-tandy",
+    "md5": "6d2e82e2091d61225191597f5b249e1f",
+    "updated": "Fri Jun  7 19:36:55 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sherlock-dev-r97-s871026.z5",
+    "type": "z5",
+    "serial": "871026",
+    "release": "97",
+    "tags": "-dev",
+    "comment": "Appears to be mid-development; the trademark and subtitle are not yet set.",
+    "md5": "625c0da3e8b9b2c26382aac7c2a2bb91",
+    "updated": "Mon Jan  4 21:29:53 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sherlock-nosound-r21-s871214.z5",
+    "type": "z5",
+    "serial": "871214",
+    "release": "21",
+    "tags": "-nosound",
+    "comment": "Masterpieces version, PC.",
+    "md5": "33100e22129638cde4ecdce06d52cbbe",
+    "updated": "Fri Jun  7 19:36:55 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sherlock-nosound-r4-s880324.z5",
+    "type": "z5",
+    "serial": "880324",
+    "release": "4",
+    "tags": "-nosound",
+    "md5": "8feaa95bb9440e98cb48dc17bf2dc299",
+    "updated": "Fri Jun  7 19:36:56 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sherlock-r22-s880112.z5",
+    "type": "z5",
+    "serial": "880112",
+    "release": "22",
+    "md5": "5f5d5ae79973537b762775ec833ded43",
+    "updated": "Fri Jun  7 19:36:56 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sherlock-r26-s880127.z5",
+    "type": "z5",
+    "serial": "880127",
+    "release": "26",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "d6f9c9804977af1ece26f3a7edabf768",
+    "updated": "Fri Jun  7 19:36:56 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r278-s890209.z6",
+    "type": "z6",
+    "serial": "890209",
+    "release": "278",
+    "md5": "f0d581815fc200527da83d223cc99481",
+    "updated": "Mon Jan  4 22:21:13 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r278-s890211.z6",
+    "type": "z6",
+    "serial": "890211",
+    "release": "278",
+    "md5": "cb224618e809281d911c07319e74f472",
+    "updated": "Mon Jan  4 22:21:13 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r279-s890217.z6",
+    "type": "z6",
+    "serial": "890217",
+    "release": "279",
+    "md5": "5be95b0a01ee2344f3df76ce51db9698",
+    "updated": "Mon Jan  4 22:21:13 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r280-s890217.z6",
+    "type": "z6",
+    "serial": "890217",
+    "release": "280",
+    "md5": "2e41d5edbb94630aa4cbfe5e3a144c3f",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r281-s890222.z6",
+    "type": "z6",
+    "serial": "890222",
+    "release": "281",
+    "md5": "b8989bc5df1fb39667ecabac9096f31a",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r282-s890224.z6",
+    "type": "z6",
+    "serial": "890224",
+    "release": "282",
+    "md5": "34ac05df164ec2327992a032746c5829",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r283-s890228.z6",
+    "type": "z6",
+    "serial": "890228",
+    "release": "283",
+    "md5": "b9bcfbd19d3aa5d6000b5bc436e9ee1b",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r284-s890302.z6",
+    "type": "z6",
+    "serial": "890302",
+    "release": "284",
+    "md5": "af57ccd9d83b8cbdc6a9aeb934a60aaa",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r286-s890306.z6",
+    "type": "z6",
+    "serial": "890306",
+    "release": "286",
+    "md5": "62649329ba053c19db8fcad09eac0415",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r288-s890308.z6",
+    "type": "z6",
+    "serial": "890308",
+    "release": "288",
+    "md5": "a06835e426ee934028feda0f29092d7d",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r289-s890309.z6",
+    "type": "z6",
+    "serial": "890309",
+    "release": "289",
+    "md5": "dee0bf3be21fb918bf879dae30d95d85",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r290-s890311.z6",
+    "type": "z6",
+    "serial": "890311",
+    "release": "290",
+    "md5": "ca699892e1d645bae2cd7ed758b3a872",
+    "updated": "Mon Jan  4 22:21:14 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r291-s890313.z6",
+    "type": "z6",
+    "serial": "890313",
+    "release": "291",
+    "md5": "8ee3dfd2241769970b2522a7d64535f6",
+    "updated": "Mon Jan  4 22:21:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r292-s890314.z6",
+    "type": "z6",
+    "serial": "890314",
+    "release": "292",
+    "md5": "b29c879e8132f3efe50bb49e45109b9f",
+    "updated": "Fri Jun  7 19:36:57 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r295-s890321.z6",
+    "type": "z6",
+    "serial": "890321",
+    "release": "295",
+    "md5": "0c7c365333dbc7f5b795266022264c3c",
+    "updated": "Sun Jun  9 16:06:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r311-s890510.z6",
+    "type": "z6",
+    "serial": "890510",
+    "release": "311",
+    "md5": "fd901318b95fd599ef6b5818f3a16395",
+    "updated": "Sun Jun  9 16:06:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r320-s890627.z6",
+    "type": "z6",
+    "serial": "890627",
+    "release": "320",
+    "md5": "fcd5c0d26221d7aaf882299e12ea34ee",
+    "updated": "Mon Jan  4 22:21:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r321-s890629.z6",
+    "type": "z6",
+    "serial": "890629",
+    "release": "321",
+    "md5": "7bfd99163b0bf631fc7cb7a7fc03ffa9",
+    "updated": "Mon Jan  4 22:21:15 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "shogun-r322-s890706.z6",
+    "type": "z6",
+    "serial": "890706",
+    "release": "322",
+    "md5": "8ee62b6dd81e05f54de707b9405d8ef9",
+    "updated": "Fri Jun  7 19:36:57 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-beta-r67-s000000.z3",
+    "type": "z3",
+    "serial": "000000",
+    "release": "67",
+    "tags": "-beta",
+    "comment": "From the patch archive; the serial number has been effaced. Also byte 2768 is altered; possibly a disk read error. The `$verify` command therefore fails.",
+    "md5": "457d6775bcd7244abe578f5b15f3630e",
+    "updated": "Sun Jun  9 16:06:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-beta-r67-s831208.z3",
+    "type": "z3",
+    "serial": "831208",
+    "release": "67",
+    "tags": "-beta",
+    "comment": "Pre-release, labelled \"sorcerer.beta\".",
+    "md5": "6099358ebc08c60b914e3cdef7b149d9",
+    "updated": "Fri Jun  7 19:36:57 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-gamma-r85-s840106.z3",
+    "type": "z3",
+    "serial": "840106",
+    "release": "85",
+    "tags": "-gamma",
+    "comment": "Pre-release, labelled \"sorcerer.gamma\".",
+    "md5": "1cb6f9a00a3de7541971012149ba733e",
+    "updated": "Fri Jun  7 19:36:57 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-r13-s851021.z3",
+    "type": "z3",
+    "serial": "851021",
+    "release": "13",
+    "md5": "5963ef59da2b6e72f5041c1476d3b11c",
+    "updated": "Fri Jun  7 19:36:57 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-r15-s851108.z3",
+    "type": "z3",
+    "serial": "851108",
+    "release": "15",
+    "comment": "Masterpieces version.",
+    "md5": "7adbdc7f73e18666fcafba0e3b648034",
+    "updated": "Fri Jun  7 19:36:58 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-r18-s860904.z3",
+    "type": "z3",
+    "serial": "860904",
+    "release": "18",
+    "md5": "20f1468a058d0a6de016ae70022e651c",
+    "updated": "Fri Jun  7 19:36:58 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-r4-s840131.z3",
+    "type": "z3",
+    "serial": "840131",
+    "release": "4",
+    "md5": "78262419433cd0ebef488649e635ecb2",
+    "updated": "Sun Jun  9 16:06:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "sorcerer-r6-s840508.z3",
+    "type": "z3",
+    "serial": "840508",
+    "release": "6",
+    "md5": "9937bc59139792e684232a3448f5c8b2",
+    "updated": "Sun Jun  9 16:06:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "spellbreaker-r63-s850916.z3",
+    "type": "z3",
+    "serial": "850916",
+    "release": "63",
+    "md5": "7a92ce19a39bedd970d0f1e296981f71",
+    "updated": "Fri Jun  7 19:36:58 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "spellbreaker-r63-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "63",
+    "comment": "Appears to be based on r63 s850916 with the serial number effaced, but the data differs beginning at address 0x1CF00. The file does not appear to run correctly.",
+    "md5": "e5f93fc6f08f8c4c30422b048c7b8e28",
+    "updated": "Sun Jun  9 16:06:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "spellbreaker-r86-s860829.z3",
+    "type": "z3",
+    "serial": "860829",
+    "release": "86",
+    "md5": "e44722efff4e80366d92e4b3613e1f0a",
+    "updated": "Mon Jan  4 21:32:59 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "spellbreaker-r87-s860904.z3",
+    "type": "z3",
+    "serial": "860904",
+    "release": "87",
+    "comment": "Masterpieces version.",
+    "md5": "af0ff7e83ca0a321efd1a4c22459bf7f",
+    "updated": "Fri Jun  7 19:36:58 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "starcross-r15-s820901.z3",
+    "type": "z3",
+    "serial": "820901",
+    "release": "15",
+    "md5": "cbe68a8ef8523e282daca12c298c9b40",
+    "updated": "Sat Jun  8 16:50:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "starcross-r17-s821021.z3",
+    "type": "z3",
+    "serial": "821021",
+    "release": "17",
+    "comment": "Masterpieces version.",
+    "md5": "7fdcdb7760ca75342675e59de6ed16fe",
+    "updated": "Fri Jun  7 19:36:58 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "starcross-r17-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "17",
+    "comment": "Differs from r17 s821021 only in the effaced serial number.",
+    "md5": "6e0ebfa3aae1ed17e7c6fe78eca96db5",
+    "updated": "Sat Jun  8 16:50:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "starcross-r18-s830114.z3",
+    "type": "z3",
+    "serial": "830114",
+    "release": "18",
+    "md5": "f4ffe2658d1e1a6a3405a08f23766254",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "stationfall-beta-r63-s870218.z3",
+    "type": "z3",
+    "serial": "870218",
+    "release": "63",
+    "tags": "-beta",
+    "md5": "17ce991a49201f365b0938c4fa6bf9be",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "stationfall-first-r1-s861017.z3",
+    "type": "z3",
+    "serial": "861017",
+    "release": "1",
+    "tags": "-first",
+    "md5": "460029d577095a9be25aa647bb77b887",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "stationfall-gamma-r87-s870326.z3",
+    "type": "z3",
+    "serial": "870326",
+    "release": "87",
+    "tags": "-gamma",
+    "md5": "7e687255d12a4f4631741bc8987204a9",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "stationfall-r107-s870430.z3",
+    "type": "z3",
+    "serial": "870430",
+    "release": "107",
+    "comment": "Masterpieces version.",
+    "md5": "9d7be423f2517eed0feebc42e47a75a9",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspect-atari-r14-s841005.z3",
+    "type": "z3",
+    "serial": "841005",
+    "release": "14",
+    "tags": "-atari",
+    "comment": "Variant r14 game file for Atari.",
+    "md5": "659c64904f51218253ef8cbbc23f4c09",
+    "updated": "Fri Jun  7 19:36:59 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspect-i189-r18-s850222.z3",
+    "type": "z3",
+    "serial": "850222",
+    "release": "18",
+    "tags": "-i189",
+    "md5": "8fa74f981513624be51522b59b567e52",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspect-i190-r18-s850222.z3",
+    "type": "z3",
+    "serial": "850222",
+    "release": "18",
+    "tags": "-i190",
+    "md5": "130df541936f45743bd5be91ab8ab4c9",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspect-r14-s000000.z3",
+    "type": "z3",
+    "serial": "000000",
+    "release": "14",
+    "comment": "Hack, effaced serial number.",
+    "md5": "eb6ffe52b8ded1d4e25277543f370271",
+    "updated": "Sat Jun  8 16:50:27 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspect-r14-s841005.z3",
+    "type": "z3",
+    "serial": "841005",
+    "release": "14",
+    "comment": "Masterpieces version.",
+    "md5": "29693237734f58538910c37af10dd951",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-alt-r8-s840521.z3",
+    "type": "z3",
+    "serial": "840521",
+    "release": "8",
+    "tags": "-alt",
+    "comment": "This appears to differ from the Mac version only in a text encoding error: \"The breathing of the mechanisms has becomeIrrenothing lar...\" It may be the result of a disk read error.",
+    "md5": "baf51e60b57f42722c62827a6f183b84",
+    "updated": "Sat Jun  8 16:50:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-mac-r8-s840521.z3",
+    "type": "z3",
+    "serial": "840521",
+    "release": "8",
+    "tags": "-mac",
+    "md5": "2e705076c310542f952702b20ae846e1",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-r5-s830222.z3",
+    "type": "z3",
+    "serial": "830222",
+    "release": "5",
+    "md5": "c44d0baea457165708ffcf7635e90e35",
+    "updated": "Sat Jun  8 16:50:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-r5-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "5",
+    "comment": "Differs from r5 s830222 only in the effaced serial number.",
+    "md5": "5e247e8af7b2dd15f995ba9fe60af6ee",
+    "updated": "Sat Jun  8 16:50:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-r7-s830419.z3",
+    "type": "z3",
+    "serial": "830419",
+    "release": "7",
+    "md5": "3ad6ab4d0b972df1004b3613837beb71",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "suspended-r8-s830521.z3",
+    "type": "z3",
+    "serial": "830521",
+    "release": "8",
+    "comment": "Masterpieces version.",
+    "md5": "7d812e1e389faa575266c587cac8592f",
+    "updated": "Fri Jun  7 19:37:00 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-alpha-r1-s851202.z4",
+    "type": "z4",
+    "serial": "851202",
+    "release": "1",
+    "tags": "-alpha",
+    "comment": "Alpha test version.",
+    "md5": "4ef4fcfea9f566b599bb90264330b719",
+    "updated": "Fri Jun  7 19:37:01 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-beta-r1-s860221.z4",
+    "type": "z4",
+    "serial": "860221",
+    "release": "1",
+    "tags": "-beta",
+    "comment": "Beta test version.",
+    "md5": "176d320ee998cc95f4270e1c1608aa84",
+    "updated": "Fri Jun  7 19:37:01 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-beta-r14-s860313.z4",
+    "type": "z4",
+    "serial": "860313",
+    "release": "14",
+    "tags": "-beta",
+    "comment": "Beta test version \"for James Hayes\".",
+    "md5": "53631e3f27d92252422120128228de91",
+    "updated": "Sat Jun  8 16:50:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-r11-s860509.z4",
+    "type": "z4",
+    "serial": "860509",
+    "release": "11",
+    "md5": "635d493f3c2d0c9d4d65d8efa0a8b84a",
+    "updated": "Sat Jun  8 16:50:26 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-r12-s860926.z4",
+    "type": "z4",
+    "serial": "860926",
+    "release": "12",
+    "comment": "Masterpieces version.",
+    "md5": "16e7d89dbdfa5aa0062665710578b798",
+    "updated": "Fri Jun  7 19:37:01 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "trinity-r15-s870628.z4",
+    "type": "z4",
+    "serial": "870628",
+    "release": "15",
+    "md5": "d81c47fff33d83c83097a3077b267624",
+    "updated": "Fri Jun  7 19:37:02 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "wishbringer-invclues-r23-s880706.z5",
+    "type": "z5",
+    "serial": "880706",
+    "release": "23",
+    "tags": "-invclues",
+    "md5": "ce7e35970b2f0236d78ef3ec4ad7e94c",
+    "updated": "Fri Jun  7 19:37:02 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "wishbringer-r68-s850501.z3",
+    "type": "z3",
+    "serial": "850501",
+    "release": "68",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "7ff15eee48764904831afa0f784acf86",
+    "updated": "Fri Jun  7 19:37:02 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "wishbringer-r69-s850920.z3",
+    "type": "z3",
+    "serial": "850920",
+    "release": "69",
+    "comment": "Masterpieces version, PC.",
+    "md5": "464813adccee6310d128af12f1865638",
+    "updated": "Fri Jun  7 19:37:02 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "wishbringer-rX165-s880609.z3",
+    "type": "z3",
+    "serial": "880609",
+    "release": "X165",
+    "comment": "The release number is 32933 (165 with the high bit set). This fails with memory errors in modern interpreters. It may be a compilation failure or an intermediate compilation stage.",
+    "md5": "4ed5d2e1e4b105bb4c1f2cec0c3444ae",
+    "updated": "Fri Jun  7 19:37:02 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r13-s830524.z3",
+    "type": "z3",
+    "serial": "830524",
+    "release": "13",
+    "md5": "76dd2612c55bdabacd49a0e24beb9077",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r18-s830910.z3",
+    "type": "z3",
+    "serial": "830910",
+    "release": "18",
+    "md5": "dcfda77aaf0e344a098a1c86b35f8851",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r20-s831119.z3",
+    "type": "z3",
+    "serial": "831119",
+    "release": "20",
+    "md5": "47c3ef9cc5cbcbb7e639df8844d5dba0",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r21-s831208.z3",
+    "type": "z3",
+    "serial": "831208",
+    "release": "21",
+    "md5": "f49a56fc2de8ceda546d3d469ca78b93",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r22-s840924.z3",
+    "type": "z3",
+    "serial": "840924",
+    "release": "22",
+    "comment": "Masterpieces version.",
+    "md5": "12c8b49eedc41b004b594e3770df249d",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "witness-r23-s840925.z3",
+    "type": "z3",
+    "serial": "840925",
+    "release": "23",
+    "md5": "3a7ad3e1a40f4ea8383dede11a434be7",
+    "updated": "Fri Jun  7 19:37:03 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "ziptest-r12-s890607.z6",
+    "type": "z6",
+    "serial": "890607",
+    "release": "12",
+    "comment": "Tests z6 (\"yzip\").",
+    "md5": "83896250967ef20ce65e4e26907a23ab",
+    "updated": "Mon Jan  4 21:31:58 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "ziptest-r13-s890619.z6",
+    "type": "z6",
+    "serial": "890619",
+    "release": "13",
+    "comment": "Tests z6 (\"yzip\").",
+    "md5": "91206c0338105e7c8890dcd871dea913",
+    "updated": "Mon Jan  4 21:31:58 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "ziptest-r40-s840613.z3",
+    "type": "z3",
+    "serial": "840613",
+    "release": "40",
+    "comment": "Tests z3 (\"zip\").",
+    "md5": "96f603534f3904bc095653f66377bb7c",
+    "updated": "Mon Jan  4 21:31:58 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-alpha-r96-s880224.z5",
+    "type": "z5",
+    "serial": "880224",
+    "release": "96",
+    "tags": "-alpha",
+    "md5": "56f4954d446782a6b7ac819728d4a217",
+    "updated": "Fri Jun  7 19:37:04 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-beta-r242-s880830.z6",
+    "type": "z6",
+    "serial": "880830",
+    "release": "242",
+    "tags": "-beta",
+    "md5": "9cd6e2720ec94055c9cd168b7f2dca4a",
+    "updated": "Fri Jun  7 19:37:04 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-demo-r366-s890323.z6",
+    "type": "z6",
+    "serial": "890323",
+    "release": "366",
+    "tags": "-demo",
+    "md5": "0f41204d718d4032fd14d642c75d3563",
+    "updated": "Sat Jun  8 16:50:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-demo-r393-s890714.z6",
+    "type": "z6",
+    "serial": "890714",
+    "release": "393",
+    "tags": "-demo",
+    "md5": "e23f296c5c298793f53a350c8afac3a9",
+    "updated": "Sat Jun  8 16:50:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-first-r0-s870831.z5",
+    "type": "z5",
+    "serial": "870831",
+    "release": "0",
+    "tags": "-first",
+    "md5": "9beef5809d6c2823463893099993ca7a",
+    "updated": "Fri Jun  7 19:37:04 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-ibm-r392-s890714.z6",
+    "type": "z6",
+    "serial": "890714",
+    "release": "392",
+    "tags": "-ibm",
+    "md5": "207d40e1d4b62e6bd144dae85d7b435f",
+    "updated": "Fri Jun  7 19:37:05 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-oldparser-r1-s871030.z5",
+    "type": "z5",
+    "serial": "871030",
+    "release": "1",
+    "tags": "-oldparser",
+    "md5": "c5de99342c5681cf508b18ef1ea20cae",
+    "updated": "Fri Jun  7 19:37:05 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-prealpha-r74-s880114.z5",
+    "type": "z5",
+    "serial": "880114",
+    "release": "74",
+    "tags": "-prealpha",
+    "md5": "453790763bbbf1380c5f52ac8c80ebe5",
+    "updated": "Fri Jun  7 19:37:05 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r153-s880510.z5",
+    "type": "z5",
+    "serial": "880510",
+    "release": "153",
+    "md5": "5fd3d8cb4375c5ca037f210c85363a1d",
+    "updated": "Fri Jun  7 19:37:05 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r242-s880901.z6",
+    "type": "z6",
+    "serial": "880901",
+    "release": "242",
+    "md5": "fc8cc13b84b9a66203ef707afbcf0218",
+    "updated": "Fri Jun  7 19:37:06 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r296-s881019.z6",
+    "type": "z6",
+    "serial": "881019",
+    "release": "296",
+    "comment": "Masterpieces version, Mac.",
+    "md5": "4a00db5c9941a235ff0c65c4d49a927b",
+    "updated": "Fri Jun  7 19:37:06 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r343-s890217.z6",
+    "type": "z6",
+    "serial": "890217",
+    "release": "343",
+    "comment": "Does not run.",
+    "md5": "46cc62e76f92959ebcaa4c8b1288a9be",
+    "updated": "Mon Jan  4 21:50:44 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r366-s890323.z6",
+    "type": "z6",
+    "serial": "890323",
+    "release": "366",
+    "md5": "3793d02e20ade4079352c6ae3a652514",
+    "updated": "Sat Jun  8 16:50:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r383-s890602.z6",
+    "type": "z6",
+    "serial": "890602",
+    "release": "383",
+    "md5": "4458af180b7296500f3da6a1dd781b00",
+    "updated": "Sat Jun  8 16:50:25 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r387-s890612.z6",
+    "type": "z6",
+    "serial": "890612",
+    "release": "387",
+    "comment": "Does not run correctly.",
+    "md5": "bb5389d4a532c7fe70671b5916b731d2",
+    "updated": "Mon Jan  4 21:50:45 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r393-s890714.z6",
+    "type": "z6",
+    "serial": "890714",
+    "release": "393",
+    "comment": "Masterpieces version, PC.",
+    "md5": "d83c343d71ac4c03661488148876b370",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork0-r66-s890111.z6",
+    "type": "z6",
+    "serial": "890111",
+    "release": "66",
+    "comment": "Release number out of order.",
+    "md5": "da8e94e9a9c4b3e7d5958e2b401444d4",
+    "updated": "Mon Jan  4 21:50:45 2021"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-german-beta-r3-s880113.z5",
+    "type": "z5",
+    "serial": "880113",
+    "release": "3",
+    "tags": "-german-beta",
+    "md5": "fc123fef2c0ba1d19bdc45d34a60c5de",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-german-r15-s890613.z6",
+    "type": "z6",
+    "serial": "890613",
+    "release": "15",
+    "tags": "-german",
+    "md5": "f7621f917d4d2e129d9ffd834f965019",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-invclues-r52-s871125.z5",
+    "type": "z5",
+    "serial": "871125",
+    "release": "52",
+    "tags": "-invclues",
+    "md5": "ce1d36e5fc0dfc6821805444d4e2f6b1",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r119-s880429.z3",
+    "type": "z3",
+    "serial": "880429",
+    "release": "119",
+    "md5": "1d4606016ea58ee038da53d994392323",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r15-sUG3AU5.z2",
+    "type": "z2",
+    "serial": "UG3AU5",
+    "release": "15",
+    "md5": "95577f553bfa35a5fda12c98bda215d8",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r15-sXXXXXX.z2",
+    "type": "z2",
+    "serial": "XXXXXX",
+    "release": "15",
+    "comment": "Labelled \"Hack of 15.UG3AU5\". It differs only in the effaced serial number.",
+    "md5": "13dcd359832d2e16eeac376c3283bdc5",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r2-sAS000C.z1",
+    "type": "z1",
+    "serial": "AS000C",
+    "release": "2",
+    "comment": "See note above.",
+    "md5": "743d2279f2783e0978c4d76144473af5",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r20-sXXXXXX.z3",
+    "type": "z3",
+    "serial": "XXXXXX",
+    "release": "20",
+    "md5": "2bfe3246aa7c1442cecb54a126845f2c",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r23-s820428.z3",
+    "type": "z3",
+    "serial": "820428",
+    "release": "23",
+    "md5": "669ef2489b6950df42095cd803060c88",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r25-s820515.z3",
+    "type": "z3",
+    "serial": "820515",
+    "release": "25",
+    "md5": "f471fbdb03aff891a0ad8158debf04e0",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r26-s820803.z3",
+    "type": "z3",
+    "serial": "820803",
+    "release": "26",
+    "md5": "f15f3f405933b9716c57f83d3a7db6b0",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r28-s821013.z3",
+    "type": "z3",
+    "serial": "821013",
+    "release": "28",
+    "md5": "628bcbbd83b19afa22ad95b1047ef3e5",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r30-s830330.z3",
+    "type": "z3",
+    "serial": "830330",
+    "release": "30",
+    "md5": "9f61962d0e859004081df09de7ff57d2",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r5-sXXXXXX.z1",
+    "type": "z1",
+    "serial": "XXXXXX",
+    "release": "5",
+    "md5": "ec70368a5ea02bc1f69dc36f1dc97bb9",
+    "updated": "Sat Jun  8 16:50:21 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r75-s830929.z3",
+    "type": "z3",
+    "serial": "830929",
+    "release": "75",
+    "md5": "78f2af352601eaeb8248062c8c71611e",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r76-s840509.z3",
+    "type": "z3",
+    "serial": "840509",
+    "release": "76",
+    "md5": "6ad12566e6b5aff067e0b21d69b3eacd",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork1-r88-s840726.z3",
+    "type": "z3",
+    "serial": "840726",
+    "release": "88",
+    "comment": "Masterpieces version.",
+    "md5": "dcafbb901b39841013a54f160bd170d5",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-mac-r22-s840518.z3",
+    "type": "z3",
+    "serial": "840518",
+    "release": "22",
+    "tags": "-mac",
+    "md5": "11d991c3391b2503863b0ce11849ac20",
+    "updated": "Fri Jun  7 19:37:07 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r15-s820308.z3",
+    "type": "z3",
+    "serial": "820308",
+    "release": "15",
+    "md5": "650c31ddabab4121a49f34db407fc1e5",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r17-s820427.z3",
+    "type": "z3",
+    "serial": "820427",
+    "release": "17",
+    "md5": "49db3ed7d012314a97fd3b43e55c6d8f",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r18-s820512.z3",
+    "type": "z3",
+    "serial": "820512",
+    "release": "18",
+    "md5": "f4097f9b23434b3be291da6631955e7b",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r18-s820517.z3",
+    "type": "z3",
+    "serial": "820517",
+    "release": "18",
+    "md5": "f5f0b1ca024fed9eabf6de174e5e60c0",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r19-s820721.z3",
+    "type": "z3",
+    "serial": "820721",
+    "release": "19",
+    "md5": "39c6b3284e2c1b84bb8bed48d5420151",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r22-s830331.z3",
+    "type": "z3",
+    "serial": "830331",
+    "release": "22",
+    "md5": "6c01e0374913c399219506ffd594b842",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r23-s830411.z3",
+    "type": "z3",
+    "serial": "830411",
+    "release": "23",
+    "md5": "539d75137d3c5993984ca5dd5524d1d5",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r48-s840904.z3",
+    "type": "z3",
+    "serial": "840904",
+    "release": "48",
+    "comment": "Masterpieces version.",
+    "md5": "71b1bf0bb198d8e7584b95f8527539d9",
+    "updated": "Fri Jun  7 19:37:08 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r63-s860811.z3",
+    "type": "z3",
+    "serial": "860811",
+    "release": "63",
+    "md5": "e3fd4c0a04481c2b5f66fbee163d92a1",
+    "updated": "Fri Jun  7 19:37:08 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork2-r7-sUG3AU5.z2",
+    "type": "z2",
+    "serial": "UG3AU5",
+    "release": "7",
+    "md5": "1b56b55cda1c77839cf7e1b20dcf245f",
+    "updated": "Sat Jun  8 16:50:22 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-mac-r15-s840518.z3",
+    "type": "z3",
+    "serial": "840518",
+    "release": "15",
+    "tags": "-mac",
+    "md5": "ad7a7cf17049a5842c6b48329bd58c33",
+    "updated": "Fri Jun  7 19:37:08 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r10-s820818.z3",
+    "type": "z3",
+    "serial": "820818",
+    "release": "10",
+    "md5": "a34434efcd4373df7886632484bb896b",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r12-s821025.z3",
+    "type": "z3",
+    "serial": "821025",
+    "release": "12",
+    "md5": "d30cb68b5d2838f3cc3ca3a792243d4e",
+    "updated": "Sat Jun  8 16:50:23 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r15-s830331.z3",
+    "type": "z3",
+    "serial": "830331",
+    "release": "15",
+    "md5": "7d002caa2cb33232b63cf890f67213ec",
+    "updated": "Sat Jun  8 16:50:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r16-s830410.z3",
+    "type": "z3",
+    "serial": "830410",
+    "release": "16",
+    "md5": "ca8c063cdb25c90c3eca10b4e5461414",
+    "updated": "Sat Jun  8 16:50:24 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r17-s840727.z3",
+    "type": "z3",
+    "serial": "840727",
+    "release": "17",
+    "comment": "Masterpieces version.",
+    "md5": "039ceba0946e778743d7687510dc5e2a",
+    "updated": "Fri Jun  7 19:37:08 2019"
+  },
+  {
+    "dir": "gamefiles",
+    "filename": "zork3-r25-s860811.z3",
+    "type": "z3",
+    "serial": "860811",
+    "release": "25",
+    "md5": "83fbb273398fe3c7b5f731188b1958cc",
+    "updated": "Fri Jun  7 19:37:08 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "abyss-r1.zip",
+    "type": "zip",
+    "release": "1",
+    "md5": "3388ae3921653333efe7b05023e46dfc",
+    "updated": "Fri Jun  7 19:39:00 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "amfv-r77.zip",
+    "type": "zip",
+    "release": "77",
+    "md5": "29ac6b851f366aec2626044444517373",
+    "updated": "Fri Jun  7 19:39:01 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "amfv-r79.zip",
+    "type": "zip",
+    "release": "79",
+    "md5": "f3e6484378c5cb7bacb427a548c67f55",
+    "updated": "Fri Jun  7 19:39:02 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "amfv-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "157fa4ff22b2307a243c7de1f2c8632a",
+    "updated": "Fri Jun  7 19:39:02 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "arthur-r41.zip",
+    "type": "zip",
+    "release": "41",
+    "md5": "829b4d2036b26bf98ef65e4850333358",
+    "updated": "Fri Jun  7 19:39:04 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "arthur-r74.zip",
+    "type": "zip",
+    "release": "74",
+    "md5": "948b41818ee73cb6faedf9e6bb68112f",
+    "updated": "Fri Jun  7 19:39:06 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "arthur-rmid1.zip",
+    "type": "zip",
+    "release": "mid1",
+    "comment": "Source is intermediate between r41 and r74; no game file.",
+    "md5": "e7ff395eabe8df66759a99bcbb25f6c9",
+    "updated": "Fri Jun  7 19:39:06 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "arthur-rmid2.zip",
+    "type": "zip",
+    "release": "mid2",
+    "comment": "Source is intermediate between r41 and r74; no game file.",
+    "md5": "094265d14cea8ac6d4fd2c1e7e79ff18",
+    "updated": "Fri Jun  7 19:39:07 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "ballyhoo-r99.zip",
+    "type": "zip",
+    "release": "99",
+    "md5": "8e8d15f88669ba78f191763741275593",
+    "updated": "Fri Jun  7 19:39:07 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "beyondzork-r50.zip",
+    "type": "zip",
+    "release": "50",
+    "md5": "a145e5924bb20475bb697ef1328645c6",
+    "updated": "Fri Jun  7 19:39:07 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "beyondzork-r57.zip",
+    "type": "zip",
+    "release": "57",
+    "md5": "9fc32e542de31e4cf820717de07d0a1e",
+    "updated": "Fri Jun  7 19:39:08 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "beyondzork-r60.zip",
+    "type": "zip",
+    "release": "60",
+    "md5": "c246d6ffc6510f964d29f2443ef15310",
+    "updated": "Fri Jun  7 19:39:09 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "borderzone-r9.zip",
+    "type": "zip",
+    "release": "9",
+    "md5": "605441232d96a3df60749873fb762e99",
+    "updated": "Fri Jun  7 19:39:09 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "borderzone-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "9b785a226110709da5efd13eb41f1801",
+    "updated": "Fri Jun  7 19:39:09 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "bureaucracy-r160.zip",
+    "type": "zip",
+    "release": "160",
+    "md5": "3112fa6f79e9c48f96f5d90f6362e3f7",
+    "updated": "Fri Jun  7 19:39:10 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "checkpoint-r46.zip",
+    "type": "zip",
+    "release": "46",
+    "md5": "e3188dcb68ead3e932dba4b2edfd9700",
+    "updated": "Fri Jun  7 19:39:11 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "cutthroats-r23.zip",
+    "type": "zip",
+    "release": "23",
+    "md5": "8c51e15d05d03656222fafd47cdf5900",
+    "updated": "Fri Jun  7 19:39:11 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "cutthroats-r25.zip",
+    "type": "zip",
+    "release": "25",
+    "md5": "18b951a57dcb5eceaa3a1bb78745c77a",
+    "updated": "Fri Jun  7 19:39:11 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "deadline-r27.zip",
+    "type": "zip",
+    "release": "27",
+    "md5": "16def6b51b638504d94bced541557ff6",
+    "updated": "Fri Jun  7 19:39:12 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "deadline-r28.zip",
+    "type": "zip",
+    "release": "28",
+    "md5": "e29eaf8cf222aa5cbab4a88e6a602a07",
+    "updated": "Fri Jun  7 19:39:12 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "enchanter-mac-r16.zip",
+    "type": "zip",
+    "release": "16",
+    "tags": "-mac",
+    "md5": "f96ae5e963c8762ff4a977e59ca6a37c",
+    "updated": "Thu Jun 20 22:59:04 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "enchanter-r24.zip",
+    "type": "zip",
+    "release": "24",
+    "md5": "484f632326ada9597485f5ca8a1ed735",
+    "updated": "Fri Jun  7 19:39:12 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "enchanter-r29.zip",
+    "type": "zip",
+    "release": "29",
+    "md5": "cc981a3980459eaada0bd625b7d6dba2",
+    "updated": "Fri Jun  7 19:39:13 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "generic.zip",
+    "type": "zip",
+    "md5": "308946098e5526c87c6ad7ed9883dfbc",
+    "updated": "Fri Jun  7 19:39:13 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hitchhiker-invclues-r31.zip",
+    "type": "zip",
+    "release": "31",
+    "tags": "-invclues",
+    "md5": "e2712bbff237d35a7c1bcca166582719",
+    "updated": "Thu Jun 20 22:59:05 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hitchhiker-r58.zip",
+    "type": "zip",
+    "release": "58",
+    "md5": "16ee1d17b89a83abdd1658bd7677b756",
+    "updated": "Fri Jun  7 19:39:14 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hitchhiker-r60.zip",
+    "type": "zip",
+    "release": "60",
+    "md5": "c0a49950306963d1fd0e202a3d0aea65",
+    "updated": "Fri Jun  7 19:39:14 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hollywoodhijinx-r37.zip",
+    "type": "zip",
+    "release": "37",
+    "md5": "cb50e5fd6a540557ea93696c41a5d751",
+    "updated": "Fri Jun  7 19:39:15 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hollywoodhijinx-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "80d6e51cf42ef292599284c99fe9c9b0",
+    "updated": "Fri Jun  7 19:39:15 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "hypochondriac.zip",
+    "type": "zip",
+    "md5": "16e2792fe11d5648e128a41fc7b58b10",
+    "updated": "Sat Dec 14 13:24:56 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "infidel-mac-r22-s840522.zip",
+    "type": "zip",
+    "serial": "840522",
+    "release": "22",
+    "tags": "-mac",
+    "md5": "6ea21b5334ee7f447875e877dcc94945",
+    "updated": "Thu Jun 20 22:59:04 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "infidel-r22-s830916.zip",
+    "type": "zip",
+    "serial": "830916",
+    "release": "22",
+    "md5": "b64331f9caeaa7522cbc48a98cd8e9a8",
+    "updated": "Fri Jun  7 19:39:15 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "infidel-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "md5": "d67e00665caa12736d3fe72491fca702",
+    "updated": "Fri Jun  7 19:39:15 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "journey-beta-r46.zip",
+    "type": "zip",
+    "release": "46",
+    "tags": "-beta",
+    "md5": "c5a5345014a5b551f39e498520df535e",
+    "updated": "Thu Dec 26 17:40:59 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "journey-r46.zip",
+    "type": "zip",
+    "release": "46",
+    "md5": "256fcba57234e1fb5e885d5cb2b8e16f",
+    "updated": "Thu Dec 26 17:40:59 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "journey-r83.zip",
+    "type": "zip",
+    "release": "83",
+    "md5": "132577669ec934ba4923e32b225a3cb4",
+    "updated": "Fri Jun  7 19:39:18 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "leathergoddesses-invclues-r4.zip",
+    "type": "zip",
+    "release": "4",
+    "tags": "-invclues",
+    "md5": "28bff1f7b523688f211b5b6463b6cea1",
+    "updated": "Mon Jul  1 21:22:34 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "leathergoddesses-mac-r59.zip",
+    "type": "zip",
+    "release": "59",
+    "tags": "-mac",
+    "md5": "3522186a0a910fefd6aeb431b03d57e3",
+    "updated": "Mon Jul  1 21:22:35 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "leathergoddesses-r59.zip",
+    "type": "zip",
+    "release": "59",
+    "md5": "c281caba3375cc1008304c7a3db4d815",
+    "updated": "Mon Jul  1 21:22:35 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "lurkinghorror-r203.zip",
+    "type": "zip",
+    "release": "203",
+    "md5": "c43e21546644755ff2ca5202cb555089",
+    "updated": "Fri Jun  7 19:39:19 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "lurkinghorror-r221.zip",
+    "type": "zip",
+    "release": "221",
+    "md5": "90a8dec97749bcb6a4a48e021e76c9d5",
+    "updated": "Fri Jun  7 19:39:19 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "minizork-r2.zip",
+    "type": "zip",
+    "release": "2",
+    "md5": "f7c69cb28a664a9966d9722d125c66cf",
+    "updated": "Fri Jun  7 19:39:20 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "minizork-r34.zip",
+    "type": "zip",
+    "release": "34",
+    "md5": "5c90c009e7cb1fbd8516525f6dead0fb",
+    "updated": "Fri Jun  7 19:39:20 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "minizork2-r2.zip",
+    "type": "zip",
+    "release": "2",
+    "md5": "d7dff6feb0f3ccd23f73bf79468d2dfb",
+    "updated": "Fri Jun  7 19:39:20 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "moonmist-r13.zip",
+    "type": "zip",
+    "release": "13",
+    "md5": "c8d23c11351912c376d3af01509f270a",
+    "updated": "Fri Jun  7 19:39:21 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "moonmist-r9.zip",
+    "type": "zip",
+    "release": "9",
+    "md5": "eff1d6554b2e7aec676a4b6309c37f82",
+    "updated": "Fri Jun  7 19:39:21 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "nordandbert-r19.zip",
+    "type": "zip",
+    "release": "19",
+    "md5": "81083883670833574db168760f24698d",
+    "updated": "Fri Jun  7 19:39:21 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "nordandbert-r20.zip",
+    "type": "zip",
+    "release": "20",
+    "md5": "6322aa9335649f4a298a998833e49797",
+    "updated": "Fri Jun  7 19:39:21 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "planetfall-invclues-r10.zip",
+    "type": "zip",
+    "release": "10",
+    "tags": "-invclues",
+    "md5": "b32bc6ec413c6e7b66277ea0256ba82b",
+    "updated": "Thu Jun 20 22:59:07 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "planetfall-r37.zip",
+    "type": "zip",
+    "release": "37",
+    "md5": "f822a9b5f16523c291367e8d67228943",
+    "updated": "Fri Jun  7 19:39:22 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "planetfall-r39.zip",
+    "type": "zip",
+    "release": "39",
+    "md5": "1a0fa24e7456fa9bc17f34af213f2344",
+    "updated": "Fri Jun  7 19:39:23 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "plunderedhearts-r26.zip",
+    "type": "zip",
+    "release": "26",
+    "md5": "bfad4d3a0932e7f4487cbb1968d5a245",
+    "updated": "Fri Jun  7 19:39:23 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "plunderedhearts-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "c7af976055e87b5d29d6fc28717a634d",
+    "updated": "Fri Jun  7 19:39:23 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "restaurant-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "md5": "bc27f084c59143db136e7d2c642138c8",
+    "updated": "Fri Jun  7 19:39:24 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "restaurant-r184.zip",
+    "type": "zip",
+    "release": "184",
+    "md5": "ce92ee7daac133ec16573af2bf0d6a1f",
+    "updated": "Fri Jun  7 19:39:24 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sampler-clean-r8.zip",
+    "type": "zip",
+    "release": "8",
+    "tags": "-clean",
+    "md5": "53ba25de0b5765c4bead13dafd9025f8",
+    "updated": "Fri Jun  7 19:39:24 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sampler-r53.zip",
+    "type": "zip",
+    "release": "53",
+    "md5": "349dffca6d684e826a91659938f90945",
+    "updated": "Fri Jun  7 19:39:25 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sampler-r55.zip",
+    "type": "zip",
+    "release": "55",
+    "md5": "a6e2e3ade7b245a61947aa8d38c0f218",
+    "updated": "Fri Jun  7 19:39:25 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sampler-r97.zip",
+    "type": "zip",
+    "release": "97",
+    "md5": "86228c5cb09be57f6189713278854b2f",
+    "updated": "Fri Jun  7 19:39:25 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sampler-trinity.zip",
+    "type": "zip",
+    "tags": "-trinity",
+    "md5": "e7baeb1d27c1761b231e7c1bde0e15b5",
+    "updated": "Fri Jun  7 19:39:25 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "seastalker-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "md5": "3f76a16c0ae17ed24a2c1a1b25c6925a",
+    "updated": "Fri Jun  7 19:39:25 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "seastalker-r18.zip",
+    "type": "zip",
+    "release": "18",
+    "md5": "57c27cae00965787572920bfb388f445",
+    "updated": "Fri Jun  7 19:39:26 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sherlock-nosound-r26.zip",
+    "type": "zip",
+    "release": "26",
+    "tags": "-nosound",
+    "md5": "ddff65aa22e2458a7a2411e73903a8bb",
+    "updated": "Fri Jun  7 19:39:27 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sherlock-r26.zip",
+    "type": "zip",
+    "release": "26",
+    "md5": "52610b11dffb38beb1f3ab3a5e34ab28",
+    "updated": "Fri Jun  7 19:39:28 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sherlock-sound-r26.zip",
+    "type": "zip",
+    "release": "26",
+    "tags": "-sound",
+    "md5": "372d99de9122d9e29ec1b1adf8eafe74",
+    "updated": "Fri Jun  7 19:39:29 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sherlock-ss-rearlier.zip",
+    "type": "zip",
+    "release": "earlier",
+    "tags": "-ss",
+    "md5": "af1fd0cc7b923455a51b28a04edacce0",
+    "updated": "Fri Jun  7 19:39:29 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "shogun-r322.zip",
+    "type": "zip",
+    "release": "322",
+    "md5": "0e8a1d0c843ad51047e310fab3411f5e",
+    "updated": "Fri Jun  7 19:39:32 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "shogun-rearlier.zip",
+    "type": "zip",
+    "release": "earlier",
+    "md5": "c320a11d79e8eeb7ca49035ff0da650a",
+    "updated": "Fri Jun  7 19:39:33 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sorcerer-r13.zip",
+    "type": "zip",
+    "release": "13",
+    "md5": "9526aa0b4f7af3aa11b8295f503d8319",
+    "updated": "Fri Jun  7 19:39:33 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "sorcerer-r18.zip",
+    "type": "zip",
+    "release": "18",
+    "md5": "39d92e49d67a3c40b7d49dac91e41b4a",
+    "updated": "Fri Jun  7 19:39:33 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "spellbreaker-r63.zip",
+    "type": "zip",
+    "release": "63",
+    "md5": "8bbee526bdfc31ae94d80ac4d5226d42",
+    "updated": "Fri Jun  7 19:39:34 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "spellbreaker-r87.zip",
+    "type": "zip",
+    "release": "87",
+    "md5": "7393c11dc196fe1a8ba4f07f8cd3e96e",
+    "updated": "Fri Jun  7 19:39:34 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "starcross-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "md5": "b68983e9f4b73b24e1dbd03b7a299a92",
+    "updated": "Fri Jun  7 19:39:34 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "starcross-r18.zip",
+    "type": "zip",
+    "release": "18",
+    "md5": "eb4bebdde641698414b15546c2a73053",
+    "updated": "Fri Jun  7 19:39:34 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "stationfall-beta-r63.zip",
+    "type": "zip",
+    "release": "63",
+    "tags": "-beta",
+    "md5": "12e437c2b5af83e30d20554155806111",
+    "updated": "Fri Jun  7 19:39:35 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "stationfall-gamma-r87.zip",
+    "type": "zip",
+    "release": "87",
+    "tags": "-gamma",
+    "md5": "32c101dda6009a4cbfb3660bebfccab0",
+    "updated": "Fri Jun  7 19:39:35 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "stationfall-r107.zip",
+    "type": "zip",
+    "release": "107",
+    "md5": "d77995c5775e90225c3a5fca7de11f9d",
+    "updated": "Fri Jun  7 19:39:35 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "stationfall-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "27e8de59d3b58fa9a05de34753959022",
+    "updated": "Fri Jun  7 19:39:36 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "suspect-r14.zip",
+    "type": "zip",
+    "release": "14",
+    "md5": "85786ed956c087f90e0d3c203cc0f5ae",
+    "updated": "Fri Jun  7 19:39:36 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "suspect-r18.zip",
+    "type": "zip",
+    "release": "18",
+    "md5": "70a4eb3157d13dbaaed6ad56efaaa68b",
+    "updated": "Fri Jun  7 19:39:36 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "suspended-mac-r8.zip",
+    "type": "zip",
+    "release": "8",
+    "tags": "-mac",
+    "md5": "9502afaa9aa93b517a83dcff9ac2674b",
+    "updated": "Thu Jun 20 22:59:04 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "suspended-rlater.zip",
+    "type": "zip",
+    "release": "later",
+    "comment": "No game file for the most current source.",
+    "md5": "130adee460c548279b19cd0c24a06877",
+    "updated": "Fri Jun  7 19:39:37 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "trinity-r12.zip",
+    "type": "zip",
+    "release": "12",
+    "md5": "67601fc666ce88b3bf019807162c8836",
+    "updated": "Fri Jun  7 19:39:37 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "trinity-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "md5": "8a06afdfb2190b2fc64907ac09132876",
+    "updated": "Fri Jun  7 19:39:38 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "wishbringer-invclues-r23.zip",
+    "type": "zip",
+    "release": "23",
+    "tags": "-invclues",
+    "md5": "16196f7de053cfa2372a1602d827b54d",
+    "updated": "Thu Dec 26 17:17:10 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "wishbringer-invclues-rearlier.zip",
+    "type": "zip",
+    "release": "earlier",
+    "tags": "-invclues",
+    "comment": "An early stage of the InvisiClues release. This contains the hints text (as `hints.zil`) but otherwise is nearly the same as the r69 source.",
+    "md5": "ba49d872189265d47df90c0406607afe",
+    "updated": "Thu Dec 26 17:17:10 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "wishbringer-r69.zip",
+    "type": "zip",
+    "release": "69",
+    "md5": "8d25c7a634dbaa54a713dc00955b65e1",
+    "updated": "Fri Jun  7 19:39:38 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "witness-r23.zip",
+    "type": "zip",
+    "release": "23",
+    "md5": "9d18b71266fdbaa29d71378a56256509",
+    "updated": "Fri Jun  7 19:39:39 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zap-sun.zip",
+    "type": "zip",
+    "serial": "un",
+    "comment": "C, dated Mar 1988.",
+    "md5": "f34ba53c6ef15c85a061be91b502d728",
+    "updated": "Sat Sep 12 12:26:50 2020"
+  },
+  {
+    "dir": "sources",
+    "filename": "zil.zip",
+    "type": "zip",
+    "md5": "eab82198e9ca1c9a66a8bb3d49d3c806",
+    "updated": "Sun Jun 30 22:57:42 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zillib.zip",
+    "type": "zip",
+    "md5": "ee04ca185385f65d368f1d049a57956b",
+    "updated": "Thu Jun 20 23:56:44 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork0-r242.zip",
+    "type": "zip",
+    "release": "242",
+    "md5": "224f87df1a77716ea56038bed91d1c85",
+    "updated": "Fri Jun  7 19:39:41 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork0-r286.zip",
+    "type": "zip",
+    "release": "286",
+    "comment": "I erroneously labelled this r153, but Alessandro Giassi points out that it matches the r286 \"freeze\" entry in the Infocom Cabinet.",
+    "md5": "49c2c35245d405395dd57f55ee49fce1",
+    "updated": "Tue Nov 30 20:20:30 2021"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork0-r296.zip",
+    "type": "zip",
+    "release": "296",
+    "md5": "834c535b4f119040e2f4c60ff6e77f5c",
+    "updated": "Fri Jun  7 19:39:42 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork0-r393.zip",
+    "type": "zip",
+    "release": "393",
+    "md5": "f19f74c46e15da343b1602b09df4aeb3",
+    "updated": "Fri Jun  7 19:39:45 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork1-german-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "tags": "-german",
+    "md5": "afdb77eb6e27db472183face50498b62",
+    "updated": "Thu Jun 20 22:59:21 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork1-invclues-r52.zip",
+    "type": "zip",
+    "release": "52",
+    "tags": "-invclues",
+    "md5": "73e5184de25c7d95b5b53b99fd8373a4",
+    "updated": "Thu Jun 20 22:59:07 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork1-r119.zip",
+    "type": "zip",
+    "release": "119",
+    "md5": "463515fe35c63236ec2ec9748be3c778",
+    "updated": "Fri Jun  7 19:39:49 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork1-r88.zip",
+    "type": "zip",
+    "release": "88",
+    "md5": "9f5590d88574f06413573ad4ed4b1bb5",
+    "updated": "Fri Jun  7 19:39:49 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork2-mac-r22.zip",
+    "type": "zip",
+    "release": "22",
+    "tags": "-mac",
+    "md5": "07f3dd679a2a44b224f28abaf5efc48c",
+    "updated": "Thu Jun 20 22:59:04 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork2-r48.zip",
+    "type": "zip",
+    "release": "48",
+    "md5": "5a04a4fefcba3dfbba814e830199c09f",
+    "updated": "Fri Jun  7 19:39:50 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork2-r63.zip",
+    "type": "zip",
+    "release": "63",
+    "md5": "353491754de4fc86dc1d53cf91e620a5",
+    "updated": "Fri Jun  7 19:39:50 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork3-mac-r15.zip",
+    "type": "zip",
+    "release": "15",
+    "tags": "-mac",
+    "md5": "667ac39ab42b6f83b389e87db5602fed",
+    "updated": "Thu Jun 20 22:59:05 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork3-r17.zip",
+    "type": "zip",
+    "release": "17",
+    "md5": "410237c8cb4fd0ea8d29ccb854f67bcb",
+    "updated": "Fri Jun  7 19:39:50 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zork3-r25.zip",
+    "type": "zip",
+    "release": "25",
+    "md5": "45bfc640a02fc3e463599bc3bfa03636",
+    "updated": "Fri Jun  7 19:39:51 2019"
+  },
+  {
+    "dir": "sources",
+    "filename": "zorkmdl-r771212.zip",
+    "type": "zip",
+    "release": "771212",
+    "comment": "From [this historical repo](https://github.com/MITDDC/zork).",
+    "md5": "38ee122cc9f39e6c308c1d160b9421a2",
+    "updated": "Sat Sep  5 20:15:26 2020"
+  },
+  {
+    "dir": "sources",
+    "filename": "zorkmdl-r780124.zip",
+    "type": "zip",
+    "release": "780124",
+    "comment": "From [this historical repo](https://github.com/MITDDC/zork-1978-01).",
+    "md5": "7b7cd5ea4f8801f6e6ff11c111c8ff1c",
+    "updated": "Sat Sep  5 20:24:58 2020"
+  },
+  {
+    "dir": "sources",
+    "filename": "zorkmdl-r791211.zip",
+    "type": "zip",
+    "release": "791211",
+    "comment": "From [this historical repo](https://github.com/PDP-10/its/commit/1b555896ebae8fa122210322e0b01490a9bc02a4).",
+    "md5": "ede4b5fb0fa7ee0d300784731a75c656",
+    "updated": "Sat Sep  5 20:35:05 2020"
+  },
+  {
+    "dir": "sources",
+    "filename": "zorkmdl-r810722.zip",
+    "type": "zip",
+    "release": "810722",
+    "comment": "From [Bob Supnik](http://simh.trailing-edge.com/software.html).",
+    "md5": "da3435a29a5ead28243803698419ea53",
+    "updated": "Sat Dec 14 12:39:34 2019"
+  }
+]
