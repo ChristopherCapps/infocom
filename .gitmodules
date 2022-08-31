@@ -1,0 +1,3 @@
+[submodule "the_infocom_files/hitchhiker"]
+	path = the_infocom_files/hitchhiker
+	url = https://github.com/the-infocom-files/hitchhiker.git
