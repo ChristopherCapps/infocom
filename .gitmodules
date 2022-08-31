@@ -1,3 +1,81 @@
 [submodule "the_infocom_files/hitchhiker"]
 	path = the_infocom_files/hitchhiker
 	url = https://github.com/the-infocom-files/hitchhiker.git
+[submodule "the_infocom_files/trinity"]
+	path = the_infocom_files/trinity
+	url = https://github.com/the-infocom-files/trinity.git
+[submodule "the_infocom_files/zork1"]
+	path = the_infocom_files/zork1
+	url = https://github.com/the-infocom-files/zork1.git
+[submodule "the_infocom_files/planetfall"]
+	path = the_infocom_files/planetfall
+	url = https://github.com/the-infocom-files/planetfall.git
+[submodule "the_infocom_files/enchanter"]
+	path = the_infocom_files/enchanter
+	url = https://github.com/the-infocom-files/enchanter.git
+[submodule "the_infocom_files/journey"]
+	path = the_infocom_files/journey
+	url = https://github.com/the-infocom-files/journey.git
+[submodule "the_infocom_files/planetfall-invclues"]
+	path = the_infocom_files/planetfall-invclues
+	url = https://github.com/the-infocom-files/planetfall-invclues.git
+[submodule "the_infocom_files/hitchhiker-invclues"]
+	path = the_infocom_files/hitchhiker-invclues
+	url = https://github.com/the-infocom-files/hitchhiker-invclues.git
+[submodule "the_infocom_files/sherlock"]
+	path = the_infocom_files/sherlock
+	url = https://github.com/the-infocom-files/sherlock.git
+[submodule "the_infocom_files/zork1-invclues"]
+	path = the_infocom_files/zork1-invclues
+	url = https://github.com/the-infocom-files/zork1-invclues.git
+[submodule "the_infocom_files/zork-substrate"]
+	path = the_infocom_files/zork-substrate
+	url = https://github.com/the-infocom-files/zork-substrate.git
+[submodule "the_infocom_files/suspect"]
+	path = the_infocom_files/suspect
+	url = https://github.com/the-infocom-files/suspect.git
+[submodule "the_infocom_files/leathergoddesses-invclues"]
+	path = the_infocom_files/leathergoddesses-invclues
+	url = https://github.com/the-infocom-files/leathergoddesses-invclues.git
+[submodule "the_infocom_files/zork2-mini"]
+	path = the_infocom_files/zork2-mini
+	url = https://github.com/the-infocom-files/zork2-mini.git
+[submodule "the_infocom_files/zork1-mini"]
+	path = the_infocom_files/zork1-mini
+	url = https://github.com/the-infocom-files/zork1-mini.git
+[submodule "the_infocom_files/wishbringer-invclues"]
+	path = the_infocom_files/wishbringer-invclues
+	url = https://github.com/the-infocom-files/wishbringer-invclues.git
+[submodule "the_infocom_files/shogun"]
+	path = the_infocom_files/shogun
+	url = https://github.com/the-infocom-files/shogun.git
+[submodule "the_infocom_files/zillib"]
+	path = the_infocom_files/zillib
+	url = https://github.com/the-infocom-files/zillib.git
+[submodule "the_infocom_files/arthur"]
+	path = the_infocom_files/arthur
+	url = https://github.com/the-infocom-files/arthur.git
+[submodule "the_infocom_files/zork0"]
+	path = the_infocom_files/zork0
+	url = https://github.com/the-infocom-files/zork0.git
+[submodule "the_infocom_files/hollywoodhijinx"]
+	path = the_infocom_files/hollywoodhijinx
+	url = https://github.com/the-infocom-files/hollywoodhijinx.git
+[submodule "the_infocom_files/borderzone"]
+	path = the_infocom_files/borderzone
+	url = https://github.com/the-infocom-files/borderzone.git
+[submodule "the_infocom_files/beyondzork"]
+	path = the_infocom_files/beyondzork
+	url = https://github.com/the-infocom-files/beyondzork.git
+[submodule "the_infocom_files/plunderedhearts"]
+	path = the_infocom_files/plunderedhearts
+	url = https://github.com/the-infocom-files/plunderedhearts.git
+[submodule "the_infocom_files/nordandbert"]
+	path = the_infocom_files/nordandbert
+	url = https://github.com/the-infocom-files/nordandbert.git
+[submodule "the_infocom_files/lurkinghorror"]
+	path = the_infocom_files/lurkinghorror
+	url = https://github.com/the-infocom-files/lurkinghorror.git
+[submodule "the_infocom_files/bureaucracy"]
+	path = the_infocom_files/bureaucracy
+	url = https://github.com/the-infocom-files/bureaucracy.git
