@@ -79,3 +79,54 @@
 [submodule "the_infocom_files/bureaucracy"]
 	path = the_infocom_files/bureaucracy
 	url = https://github.com/the-infocom-files/bureaucracy.git
+[submodule "the_infocom_files/zork2"]
+	path = the_infocom_files/zork2
+	url = https://github.com/the-infocom-files/zork2.git
+[submodule "the_infocom_files/zork3"]
+	path = the_infocom_files/zork3
+	url = https://github.com/the-infocom-files/zork3.git
+[submodule "the_infocom_files/stationfall"]
+	path = the_infocom_files/stationfall
+	url = https://github.com/the-infocom-files/stationfall.git
+[submodule "the_infocom_files/moonmist"]
+	path = the_infocom_files/moonmist
+	url = https://github.com/the-infocom-files/moonmist.git
+[submodule "the_infocom_files/leathergoddesses"]
+	path = the_infocom_files/leathergoddesses
+	url = https://github.com/the-infocom-files/leathergoddesses.git
+[submodule "the_infocom_files/ballyhoo"]
+	path = the_infocom_files/ballyhoo
+	url = https://github.com/the-infocom-files/ballyhoo.git
+[submodule "the_infocom_files/spellbreaker"]
+	path = the_infocom_files/spellbreaker
+	url = https://github.com/the-infocom-files/spellbreaker.git
+[submodule "the_infocom_files/amfv"]
+	path = the_infocom_files/amfv
+	url = https://github.com/the-infocom-files/amfv.git
+[submodule "the_infocom_files/wishbringer"]
+	path = the_infocom_files/wishbringer
+	url = https://github.com/the-infocom-files/wishbringer.git
+[submodule "the_infocom_files/cutthroats"]
+	path = the_infocom_files/cutthroats
+	url = https://github.com/the-infocom-files/cutthroats.git
+[submodule "the_infocom_files/seastalker"]
+	path = the_infocom_files/seastalker
+	url = https://github.com/the-infocom-files/seastalker.git
+[submodule "the_infocom_files/sorcerer"]
+	path = the_infocom_files/sorcerer
+	url = https://github.com/the-infocom-files/sorcerer.git
+[submodule "the_infocom_files/infidel"]
+	path = the_infocom_files/infidel
+	url = https://github.com/the-infocom-files/infidel.git
+[submodule "the_infocom_files/witness"]
+	path = the_infocom_files/witness
+	url = https://github.com/the-infocom-files/witness.git
+[submodule "the_infocom_files/suspended"]
+	path = the_infocom_files/suspended
+	url = https://github.com/the-infocom-files/suspended.git
+[submodule "the_infocom_files/starcross"]
+	path = the_infocom_files/starcross
+	url = https://github.com/the-infocom-files/starcross.git
+[submodule "the_infocom_files/deadline"]
+	path = the_infocom_files/deadline
+	url = https://github.com/the-infocom-files/deadline.git
