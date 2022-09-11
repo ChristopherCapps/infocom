@@ -1,5 +1,5 @@
 **/.DS_Store
-zmachine_runtimes/*.app
+zmachine_runtimes/**/*.app
 zilf/**/obj
 zilf/**/bin
 zilf/**/.vs
